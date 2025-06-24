@@ -3,7 +3,7 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;  
     font-family: "Poppins", sans-serif;
 }
 
@@ -17,8 +17,7 @@ figcaption {
     display: none;
 }
 
-/* CSS PÁGINA DE INÍCIO */
-
+/* HEADER */
 #header-market {
     background-image: url(./imagens/img-header.png);
     background-size: cover;
@@ -30,7 +29,6 @@ figcaption {
     align-items: center;
     margin-bottom: 10vh;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 30px 40px;
-
 }
 
 #logo-market {
@@ -118,6 +116,10 @@ figcaption {
     transition: .3s ease;
 }
 
+ header figure svg {
+    display: none;
+}
+
 #btn-sign:hover {
     color: rgb(61, 61, 61);
 }
@@ -134,6 +136,10 @@ figcaption {
     font-size: 2rem;
 }
 
+p{
+    margin-bottom: 0!important;
+}
+
 #bag-market {
     display: flex;
     flex-direction: column;
@@ -145,6 +151,97 @@ figcaption {
     color: #FFFFFF;
     font-size: 0.875rem;
 }
+
+@media (max-width: 768px) {
+
+    #header-market {
+        flex-direction: column;
+        box-shadow: none;
+        height: 25%;
+        margin-bottom: 0;
+        background-image: none;
+        background-color: #FFA931;
+    }
+
+    #logo-market {
+        width: 70vw;
+        height: auto;
+        margin: 0 0 1rem 0;
+    }
+
+    #nav-market {
+        gap: 0.5rem;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #container-search-market {
+        width: 90vw;
+        height: 2rem;
+        border-radius: 10px;
+    }
+
+     header figure svg {
+    display: flex;
+    color: white;
+    
+}
+
+#btn-sign{
+    color: #FFA931;
+}
+
+   header figure {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px ;
+    align-items: center;
+   }
+
+    .bi-search {
+        font-size: 1rem;
+        margin: 0 0.8rem;
+    }
+
+    #search-market {
+        font-size: 1rem;
+    }
+
+    #container-header-btns {
+        gap: 10px;
+        width: 90vw;
+        justify-content: center;
+    }
+
+    .bi-bag{
+        display: none;
+    }
+
+    #btn-login, #btn-sign {
+        width: 100px;
+        height: 30px;
+        font-size: 1rem;
+        padding:1vw;
+        border-radius: 5px;
+
+    }
+
+    #container-bag-market {
+     display: none;
+    }
+
+    .bi-bag {
+        font-size: 1.8rem;
+    }
+
+    #bag-market p {
+        font-size: 0.9rem;
+    }
+}
+
+
+/*INDEX*/
 
 #section-promo {
     background-image: url(./imagens/Imagem-Super-Mercado-Faz-bem.png);
@@ -798,6 +895,28 @@ footer h5 {
 footer a {
     color: inherit;           
     text-decoration: none;    
+}
+
+@media (max-width: 768px) {
+ #row{
+    flex-direction: column;
+    text-align: center;
+   align-items: center;
+ }
+
+ #parteescurafooter {
+    padding-top: 2vw;
+}
+
+#maincontatos article {
+    display: none;
+}
+
+#maincontatos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 }
 
 
