@@ -14,7 +14,7 @@
     <title>Super Mercado Faz-bem | Home</title>
 </head>
 
-<body>
+<body id="body-index">
     <header id="header-market">
         <figure>
             <a href="index.html">
@@ -36,7 +36,7 @@
                     </button>
                 </a>
 
-                <a href="criarconta.html">
+                <a href="./sign-up.html">
                     <button id="btn-sign">
                         <p id="txt-sign">Cadastrar</p>
                     </button>
@@ -117,214 +117,175 @@
         <div id="carouselExampleDark" class="carousel carousel-dark slide">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
-                    <div class="container-two-carousel">
-                        <div id="container-carousel">
-                            <figure>
-                                <img src="./imagens/alimentos-carousel.jpg" class="img-carousel" alt="Alimento">
-                                <figcaption>Alimento</figcaption>
-                            </figure>
+                    <figure>
+                        <img src="./imagens/alimentos-carousel.jpg" class="img-carousel" alt="Alimento">
+                        <figcaption>Alimento</figcaption>
+                    </figure>
 
-                            <div class="container-txt-carousel">
-                                <div>
-                                    <h2 class="title-carousel">ALIMENTOS</h2>
+                    <div class="container-txt-carousel">
+                        <div>
+                            <h2 class="title-carousel">ALIMENTOS</h2>
 
-                                    <p class="txt-carousel">Alimentos qualificados para definir <br> sabores
-                                        espetaculares na sua <strong>mesa</strong></p>
-                                </div>
-
-                                <div class="container-btn-carousel">
-                                    <a href="categoria-alimentos.html">
-                                        <button class="btn-carousel">
-                                            quero este produto!
-                                        </button>
-                                    </a>
-
-                                    <a href="categoria-alimentos.html">
-                                        <button class="btn-carousel-2">
-                                            me leve até categoria
-                                        </button>
-                                    </a>
-                                </div>
-                            </div>
+                            <p class="txt-carousel">Alimentos qualificados para definir <br> sabores
+                                espetaculares na sua <strong>mesa</strong></p>
                         </div>
 
-                        <div id="container-carousel-2">
-                            <figure>
-                                <img src="./imagens/Image-fanta-carrosel.png" class="img-carousel-2"
-                                    alt="Fanta laranja refrigerante">
-                                <figcaption>Fanta laranja refrigerante</figcaption>
-                            </figure>
+                        <div class="container-btn-carousel">
+                            <a href="categoria-alimentos.html">
+                                <button class="btn-carousel">
+                                    quero este produto!
+                                </button>
+                            </a>
 
-                            <div id="container-txt-carousel-2">
-                                <div>
-                                    <h2 class="title-carousel">BEBIDAS</h2>
-
-                                    <p class="txt-carousel">Drinks para todos os momentos <br> escolha o seu e
-                                        <strong>celebre</strong> com <strong>moderação!</strong>
-                                    </p>
-                                </div>
-
-                                <div class="container-btn-carousel">
-                                    <a href="categoria-bebidas.html">
-                                        <button class="btn-carousel">
-                                            quero este produto!
-                                        </button>
-                                    </a>
-
-                                    <a href="categoria-bebidas.html">
-                                        <button class="btn-carousel-2">
-                                            me leve até categoria
-                                        </button>
-                                    </a>
-                                </div>
-                            </div>
+                            <a href="categoria-alimentos.html">
+                                <button class="btn-carousel-2">
+                                    me leve até categoria
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <div class="container-two-carousel">
-                        <div class="container-carousel">
-                            <figure>
-                                <img src="./imagens/Fortunella.png" class="img-carousel"
-                                    alt="fruta laranjinha chinesa ou fortunellas">
-                                <figcaption>fruta laranjinha chinesa ou fortunella</figcaption>
-                            </figure>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                        <figure>
+                            <img src="./imagens/Image-fanta-carrosel.png" class="img-carousel-2"
+                                alt="Fanta laranja refrigerante">
+                            <figcaption>Fanta laranja refrigerante</figcaption>
+                        </figure>
 
-                            <div class="container-txt-carousel">
-                                <div>
-                                    <h2 class="title-carousel">HORTIFRUTI</h2>
+                        <div id="container-txt-carousel-2">
+                            <div>
+                                <h2 class="title-carousel">BEBIDAS</h2>
 
-                                    <p class="txt-carousel">Frescor direto da natureza para a sua <br>
-                                        <strong>mesa</strong>
-                                    </p>
-                                </div>
-
-                                <div class="container-btn-carousel">
-                                    <a href="categoria-hortifruti.html">
-                                        <button class="btn-carousel">
-                                            quero este produto!
-                                        </button>
-                                    </a>
-
-                                    <a href="categoria-hortifruti.html">
-                                        <button class="btn-carousel-2">
-                                            me leve até categoria
-                                        </button>
-                                    </a>
-                                </div>
+                                <p class="txt-carousel">Drinks para todos os momentos <br> escolha o seu e
+                                    <strong>celebre</strong> com <strong>moderação!</strong>
+                                </p>
                             </div>
-                        </div>
 
-                        <div class="container-carousel-2">
-                            <figure>
-                                <img src="./imagens/frutas.jpg" class="img-carousel-2" alt="frutas">
-                                <figcaption>Frutas</figcaption>
-                            </figure>
+                            <div class="container-btn-carousel">
+                                <a href="categoria-bebidas.html">
+                                    <button class="btn-carousel">
+                                        quero este produto!
+                                    </button>
+                                </a>
 
-                            <div id="container-txt-carousel-4">
-                                <div>
-                                    <h2 class="title-carousel">FRUTAS</h2>
-
-                                    <p class="txt-carousel">categoria de frutas para <br> escolher com
-                                        <strong>satisfação</strong> e <strong>qualidade!</strong>
-                                    </p>
-                                </div>
-
-                                <div class="container-btn-carousel">
-                                    <a href="categoria-hortifruti.html">
-                                        <button class="btn-carousel">
-                                            quero este produto!
-                                        </button>
-                                    </a>
-
-                                    <a href="categoria-hortifruti.html">
-                                        <button class="btn-carousel-2">
-                                            me leve até categoria
-                                        </button>
-                                    </a>
-                                </div>
+                                <a href="categoria-bebidas.html">
+                                    <button class="btn-carousel-2">
+                                        me leve até categoria
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="container-two-carousel">
-                        <div class="container-carousel">
-                            <figure>
-                                <img src="./imagens/produtos-limpeza-carrosel.jpg" id="img-carousel"
-                                    alt="Produtos de limpeza">
-                                <figcaption>Produtos de limpeza</figcaption>
-                            </figure>
 
-                            <div class="container-txt-carousel">
-                                <div>
-                                    <h2 class="title-carousel">LIMPEZA</h2>
+                    <div class="container-carousel-2">
+                        <figure>
+                            <img src="./imagens/frutas.jpg" class="img-carousel-2" alt="frutas">
+                            <figcaption>Frutas</figcaption>
+                        </figure>
 
-                                    <p class="txt-carousel">Produtos de limpeza garantindo o cheiro <br>
-                                        <strong>adequado</strong> para a sua <strong>casa!</strong>
-                                    </p>
-                                </div>
+                        <div id="container-txt-carousel-4">
+                            <div>
+                                <h2 class="title-carousel">FRUTAS</h2>
 
-                                <div class="container-btn-carousel">
-                                    <a href="categoria-limpeza.html">
-                                        <button class="btn-carousel">
-                                            quero este produto!
-                                        </button>
-                                    </a>
-
-                                    <a href="categoria-alimentos.html">
-                                        <button class="btn-carousel-2">
-                                            me leve até categoria
-                                        </button>
-                                    </a>
-                                </div>
+                                <p class="txt-carousel">categoria de frutas para <br> escolher com
+                                    <strong>satisfação</strong> e <strong>qualidade!</strong>
+                                </p>
                             </div>
-                        </div>
 
-                        <div class="container-carousel-2">
-                            <figure>
-                                <img src="./imagens/produtos-higiênicos-carousel.jpg" class="img-carousel-2"
-                                    alt="Papel Higiênico">
-                                <figcaption>Papel Higiênico</figcaption>
-                            </figure>
+                            <div class="container-btn-carousel">
+                                <a href="categoria-hortifruti.html">
+                                    <button class="btn-carousel">
+                                        quero este produto!
+                                    </button>
+                                </a>
 
-                            <div id="container-txt-carousel-6">
-                                <div>
-                                    <h2 class="title-carousel">HIGIÊNE</h2>
-
-                                    <p class="txt-carousel">produtos higiênicos para garantir <br>
-                                        <strong>conforto</strong> e <strong>qualidade</strong>
-                                    </p>
-                                </div>
-
-                                <div class="container-btn-carousel">
-                                    <a href="categoria-higiene.html">
-                                        <button class="btn-carousel">
-                                            quero este produto!
-                                        </button>
-                                    </a>
-
-                                    <a href="categoria-higiene.html">
-                                        <button class="btn-carousel-2">
-                                            me leve até categoria
-                                        </button>
-                                    </a>
-                                </div>
+                                <a href="categoria-hortifruti.html">
+                                    <button class="btn-carousel-2">
+                                        me leve até categoria
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="carousel-item">
+                <div class="container-two-carousel">
+                    <div class="container-carousel">
+                        <figure>
+                            <img src="./imagens/produtos-limpeza-carrosel.jpg" id="img-carousel"
+                                alt="Produtos de limpeza">
+                            <figcaption>Produtos de limpeza</figcaption>
+                        </figure>
+
+                        <div class="container-txt-carousel">
+                            <div>
+                                <h2 class="title-carousel">LIMPEZA</h2>
+
+                                <p class="txt-carousel">Produtos de limpeza garantindo o cheiro <br>
+                                    <strong>adequado</strong> para a sua <strong>casa!</strong>
+                                </p>
+                            </div>
+
+                            <div class="container-btn-carousel">
+                                <a href="categoria-limpeza.html">
+                                    <button class="btn-carousel">
+                                        quero este produto!
+                                    </button>
+                                </a>
+
+                                <a href="categoria-alimentos.html">
+                                    <button class="btn-carousel-2">
+                                        me leve até categoria
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-carousel-2">
+                        <figure>
+                            <img src="./imagens/produtos-higiênicos-carousel.jpg" class="img-carousel-2"
+                                alt="Papel Higiênico">
+                            <figcaption>Papel Higiênico</figcaption>
+                        </figure>
+
+                        <div id="container-txt-carousel-6">
+                            <div>
+                                <h2 class="title-carousel">HIGIÊNE</h2>
+
+                                <p class="txt-carousel">produtos higiênicos para garantir <br>
+                                    <strong>conforto</strong> e <strong>qualidade</strong>
+                                </p>
+                            </div>
+
+                            <div class="container-btn-carousel">
+                                <a href="categoria-higiene.html">
+                                    <button class="btn-carousel">
+                                        quero este produto!
+                                    </button>
+                                </a>
+
+                                <a href="categoria-higiene.html">
+                                    <button class="btn-carousel-2">
+                                        me leve até categoria
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
         </div>
     </main>
 
@@ -332,7 +293,7 @@
         <div id="row">
             <div class="col-6 col-md-2 mb-3">
                 <a href="sobrenos.html">
-                    <h5>Sobre Nós</h5>
+                    <h5 class="title-footer-yellow">Sobre Nós</h5>
                 </a>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2">
@@ -351,7 +312,7 @@
 
             <div class="col-6 col-md-2 mb-3">
                 <a href="contatos.html">
-                    <h5>Contato</h5>
+                    <h5 class="title-footer-yellow">Contato</h5>
                 </a>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2">
@@ -370,7 +331,7 @@
 
             <div class="col-6 col-md-2 mb-3">
                 <h5>
-                    <h5>© 2025 Super Mercados Faz-Bem.</h5>
+                    <h5 class="title-footer-yellow">© 2025 Super Mercados Faz-Bem.</h5>
                 </h5>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2">

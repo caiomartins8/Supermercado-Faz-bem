@@ -19,7 +19,8 @@ figcaption {
 
 /* CSS PÁGINA DE INÍCIO */
 
-#header-market {
+@media (min-width: 768px){
+    #body-index #header-market {
     background-image: url(./imagens/img-header.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -30,7 +31,19 @@ figcaption {
     align-items: center;
     margin-bottom: 10vh;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 30px 40px;
+}
+}
 
+#header-market {
+    background-image: url(./imagens/img-header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10vh;
 }
 
 #logo-market {
@@ -174,20 +187,20 @@ figcaption {
     font-size: 6.25rem;
     color: #FFFFFF;
     font-weight: bold;
-    text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
 }
 
 .txt-promo {
     color: #7c7c7c;
     font-size: 1.2rem;
-    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
 }
 
 #discount-promo {
     color: #FFFFFF;
     font-size: 7rem;
     font-weight: bold;
-    text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
 }
 
 #btn-come {
@@ -315,7 +328,7 @@ figcaption {
     flex-direction: column;
     justify-content: center;
     gap: 12.5rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
 .img-carousel-2 {
@@ -788,9 +801,10 @@ footer figure img {
     justify-content: space-around;
 }
 
-footer h5 {
-    font-size: 1.5rem;
+.title-footer-yellow {
+    font-size: 1.3rem;
     font-weight: 600;
+    color: #FFFFFF;
 }
 
 
@@ -1011,19 +1025,13 @@ font-size: 0.8rem;
 
 .heart-icon {
   fill: none;
-  stroke: gray;
+  stroke: #9DDE90;
   transition: all 0.3s ease;
-  
 }
-
-.favoritado .heart-icon {
-  fill: #6BBA5C;
-  stroke: #437c37;
-}
-
 
 .card-title{
-font-size: 2rem;
+    font-size: 2rem;
+    color: black;
 }
 
 .card-text{
@@ -1050,29 +1058,30 @@ font-size: 2rem;
 .img-fluid{
     height: 100% !important;
     width: 100%;
+    object-fit: cover;
 }
 
 #mainalimentos h1 {
-    font-size:  rem ;
-    font-weight: 800;
+    font-size:  3rem;
+    font-weight: bold;
     text-align: center;
+    color: black;
 }
 
 #mainalimentos nav ul #li-preto {
     list-style-type: none;
-    border: 3px solid black;
+    border: 2px solid black;
     border-radius: 50px;
     font-size: 1.5rem;
     font-weight: 600;
-    width: 18%;
-    gap: 10px;
+    width: 15%;
     text-align: center;
 }
 
 #mainalimentos nav ul #li-preto a {
-    text-decoration: none; 
-    color: inherit;        
-    display: block;       
+    text-decoration: none;
+    color: inherit;   
+    display: block;   
     width: 100%;
     height: 100%;
 }
@@ -1081,11 +1090,11 @@ font-size: 2rem;
     background-color: #6BBA5C;
     color: white;
     list-style-type: none;
-    border: 3px solid #6BBA5C;
+    border: 2px solid #6BBA5C;
     border-radius: 50px;
     font-size: 1.5rem;
     font-weight: 600;
-    width: 18%;
+    width: 15%;
     gap: 10px;
     text-align: center;
 }
@@ -1105,9 +1114,9 @@ font-size: 2rem;
 #mainalimentos nav ul {
     display: flex;
     align-items: center;
-    justify-content: space-evenly
-    ;
+    justify-content: center;
     flex-direction: row;
+    gap: 10px;
 }
 
 .w-50 {
