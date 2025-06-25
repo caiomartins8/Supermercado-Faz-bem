@@ -828,6 +828,8 @@ textarea {
     font-weight: 600;
 }
 
+
+
 /*FOOTER AMARELO*/
 
 footer {
@@ -908,9 +910,16 @@ footer a {
     padding-top: 2vw;
 }
 
+#parteescurafooterverde {
+    padding-top: 2vw;
+    justify-content: center;
+}
+
 #maincontatos article {
     display: none;
 }
+
+
 
 #maincontatos{
     display: flex;
