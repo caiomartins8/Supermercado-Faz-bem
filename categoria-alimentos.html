@@ -13,44 +13,47 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
-     
+
 <body>
 
-    <header id="header-market">
+  <header id="header-market">
         <figure>
             <a href="index.html">
                 <img src="./imagens/logo.png" alt="Logo Super Mercado Faz-bem" id="logo-market">
             </a>
             <figcaption>Logo Super Mercado Faz-bem</figcaption>
         </figure>
-
+ 
         <nav id="nav-market">
             <div id="container-search-market">
                 <i class="bi bi-search"></i>
                 <input type="text" placeholder="Buscar..." id="search-market">
             </div>
-
+ 
             <div id="container-header-btns">
                 <a href="login.html">
                     <button id="btn-login">
                         <p>Entrar</p>
                     </button>
                 </a>
-
-                <a href="sign-up.html">
+ 
+                <a href="./sign-up.html">
                     <button id="btn-sign">
                         <p id="txt-sign">Cadastrar</p>
                     </button>
                 </a>
             </div>
-
+ 
             <div id="container-bag-market">
                 <a href=""><i class="bi bi-bag"></i></a>
                 <div id="bag-market">
-                    <p id="bag-money">R$ 0,0</p>
-                    <p>0 itens</p>
+                    <p>R$ 0,0  0 itens</p>
                 </div>
             </div>
+           
+            <a href="">
+                <i class="bi bi-list"></i>
+            </a>
         </nav>
     </header>
 
@@ -66,7 +69,7 @@
         <h1>CATEGORIAS</h1>
         <br>
 
-         <nav>
+        <nav>
 
             <ul>
                 <li id="li-verde"><a href="categoria-alimentos.html">alimentos</a> </li>
@@ -83,245 +86,332 @@
         <br>
         <br>
 
+        <div class="cards-desktop">
+            <section>
 
-        <section>
+                <article>
+                    <div class="card mb-3 w-50 mx-auto">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="imagens/arroz.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Arroz 1kg <strong>Prato Fino</strong></h5>
+                                    <p class="card-text">Arroz parboilizado Prato Fino</p>
+                                    <h4 class="card-title"><strong>R$ 13,00</strong></h4>
 
-                 <article>
-                <div class="card mb-3 w-50 mx-auto">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="imagens/arroz.jpg" class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Arroz 1kg <strong>Prato Fino</strong></h5>
-                                <p class="card-text">Arroz parboilizado Prato Fino</p>
-                                <h4 class="card-title"><strong>R$ 13,00</strong></h4>
+                                    <div id="btn-e-cupom">
+                                        <button class="add-to-cart" data-price="13.00">adicione no carrinho</button>
 
-                                <div id="btn-e-cupom">
-                                    <button class="add-to-cart" data-price="13.00">adicione no carrinho</button>
-
-                                    <div id="cupom">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="white"
-                                            class="bi bi-truck" viewBox="0 0 16 16">
-                                            <path
-                                                d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
-                                        </svg>
-                                        <p id="pfretegratis">cupom de frete grátis disponível</p>
+                                        <div id="cupom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="white"
+                                                class="bi bi-truck" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
+                                            </svg>
+                                            <p id="pfretegratis">cupom de frete grátis disponível</p>
+                                        </div>
                                     </div>
+
+
+
                                 </div>
 
 
 
                             </div>
 
-
-
                         </div>
-
-                    </div>
-                    <div class="favoritar" onclick="toggleFavorito(this)">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" class="heart-icon"
-                            viewBox="0 0 16 16">
-                            <path
-                                d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385C2.905 9.36 5.5 11.5 8 13.5c2.5-2 5.095-4.14 6.286-6.062.955-1.885.837-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748z" />
-                        </svg>
-                    </div>
-                </div>
-
-            </article>
-
-
-                 <article>
-                <div class="card mb-3 w-50 mx-auto">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="imagens/café.png" class="img-fluid rounded-start" alt="...">
+                        <div class="favoritar" onclick="toggleFavorito(this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none"
+                                class="heart-icon" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385C2.905 9.36 5.5 11.5 8 13.5c2.5-2 5.095-4.14 6.286-6.062.955-1.885.837-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748z" />
+                            </svg>
                         </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Café 500g <strong>3 Corações</strong></h5>
-                                <p class="card-text">Café tradicional 500g 3 corações</p>
-                                <h4 class="card-title"><strong>R$ 16,90</strong></h4>
+                    </div>
 
-                                <div id="btn-e-cupom">
-                                    <button class="add-to-cart" data-price="16.90">adicione no carrinho</button>
+                </article>
 
-                                    <div id="cupom">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="white"
-                                            class="bi bi-truck" viewBox="0 0 16 16">
-                                            <path
-                                                d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
-                                        </svg>
-                                        <p id="pfretegratis">cupom de frete grátis disponível</p>
+
+                <article>
+                    <div class="card mb-3 w-50 mx-auto">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="imagens/café.png" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Café 500g <strong>3 Corações</strong></h5>
+                                    <p class="card-text">Café tradicional 500g 3 corações</p>
+                                    <h4 class="card-title"><strong>R$ 16,90</strong></h4>
+
+                                    <div id="btn-e-cupom">
+                                        <button class="add-to-cart" data-price="16.90">adicione no carrinho</button>
+
+                                        <div id="cupom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="white"
+                                                class="bi bi-truck" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
+                                            </svg>
+                                            <p id="pfretegratis">cupom de frete grátis disponível</p>
+                                        </div>
                                     </div>
+
+
+
                                 </div>
 
 
 
                             </div>
 
-
-
                         </div>
-
-                    </div>
-                    <div class="favoritar" onclick="toggleFavorito(this)">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" class="heart-icon"
-                            viewBox="0 0 16 16">
-                            <path
-                                d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385C2.905 9.36 5.5 11.5 8 13.5c2.5-2 5.095-4.14 6.286-6.062.955-1.885.837-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748z" />
-                        </svg>
-                    </div>
-                </div>
-
-            </article>
-
-          
-
-
-            <article>
-                <div class="card mb-3 w-50 mx-auto">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="imagens/Macarrão.jpg" class="img-fluid rounded-start" alt="...">
+                        <div class="favoritar" onclick="toggleFavorito(this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none"
+                                class="heart-icon" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385C2.905 9.36 5.5 11.5 8 13.5c2.5-2 5.095-4.14 6.286-6.062.955-1.885.837-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748z" />
+                            </svg>
                         </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Espaguete 500g <strong>Faz-bem</strong></h5>
-                                <p class="card-text">Macrarrão galo espaguete 8 sêmola 500g</p>
-                                <h4 class="card-title"><strong>R$ 17,90</strong></h4>
+                    </div>
 
-                                <div id="btn-e-cupom">
-                                    <button class="add-to-cart" data-price="17.90">adicione no carrinho</button>
+                </article>
 
-                                    <div id="cupom">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="white"
-                                            class="bi bi-truck" viewBox="0 0 16 16">
-                                            <path
-                                                d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
-                                        </svg>
-                                        <p id="pfretegratis">cupom de frete grátis disponível</p>
+
+
+
+                <article>
+                    <div class="card mb-3 w-50 mx-auto">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="imagens/Macarrão.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Espaguete 500g <strong>Faz-bem</strong></h5>
+                                    <p class="card-text">Macrarrão galo espaguete 8 sêmola 500g</p>
+                                    <h4 class="card-title"><strong>R$ 17,90</strong></h4>
+
+                                    <div id="btn-e-cupom">
+                                        <button class="add-to-cart" data-price="17.90">adicione no carrinho</button>
+
+                                        <div id="cupom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="white"
+                                                class="bi bi-truck" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
+                                            </svg>
+                                            <p id="pfretegratis">cupom de frete grátis disponível</p>
+                                        </div>
                                     </div>
+
+
+
                                 </div>
 
 
 
                             </div>
 
-
-
                         </div>
-
-                    </div>
-                    <div class="favoritar" onclick="toggleFavorito(this)">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" class="heart-icon"
-                            viewBox="0 0 16 16">
-                            <path
-                                d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385C2.905 9.36 5.5 11.5 8 13.5c2.5-2 5.095-4.14 6.286-6.062.955-1.885.837-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748z" />
-                        </svg>
-                    </div>
-                </div>
-
-            </article>
-
-
-        
-
-            <article>
-                <div class="card mb-3 w-50 mx-auto">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="imagens/Feijão.jpg" class="img-fluid rounded-start" alt="...">
+                        <div class="favoritar" onclick="toggleFavorito(this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none"
+                                class="heart-icon" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385C2.905 9.36 5.5 11.5 8 13.5c2.5-2 5.095-4.14 6.286-6.062.955-1.885.837-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748z" />
+                            </svg>
                         </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Feijão 1kg <strong>Camil</strong></h5>
-                                <p class="card-text">feijão carioca Camil 1kg</p>
-                                <h4 class="card-title"><strong>R$ 13,00</strong></h4>
+                    </div>
 
-                                <div id="btn-e-cupom">
-                                    <button class="add-to-cart" data-price="13.00">adicione no carrinho</button>
+                </article>
 
-                                    <div id="cupom">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="white"
-                                            class="bi bi-truck" viewBox="0 0 16 16">
-                                            <path
-                                                d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
-                                        </svg>
-                                        <p id="pfretegratis">cupom de frete grátis disponível</p>
+
+
+
+                <article>
+                    <div class="card mb-3 w-50 mx-auto">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="imagens/Feijão.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Feijão 1kg <strong>Camil</strong></h5>
+                                    <p class="card-text">feijão carioca Camil 1kg</p>
+                                    <h4 class="card-title"><strong>R$ 13,00</strong></h4>
+
+                                    <div id="btn-e-cupom">
+                                        <button class="add-to-cart" data-price="13.00">adicione no carrinho</button>
+
+                                        <div id="cupom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="white"
+                                                class="bi bi-truck" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
+                                            </svg>
+                                            <p id="pfretegratis">cupom de frete grátis disponível</p>
+                                        </div>
                                     </div>
+
+
+
                                 </div>
 
 
 
                             </div>
 
-
-
                         </div>
-
-                    </div>
-                    <div class="favoritar" onclick="toggleFavorito(this)">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" class="heart-icon"
-                            viewBox="0 0 16 16">
-                            <path
-                                d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385C2.905 9.36 5.5 11.5 8 13.5c2.5-2 5.095-4.14 6.286-6.062.955-1.885.837-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748z" />
-                        </svg>
-                    </div>
-                </div>
-
-            </article>
-
-
-            <article>
-                <div class="card mb-3 w-50 mx-auto">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="imagens/carne-bovina.png" class="img-fluid rounded-start" alt="...">
+                        <div class="favoritar" onclick="toggleFavorito(this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none"
+                                class="heart-icon" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385C2.905 9.36 5.5 11.5 8 13.5c2.5-2 5.095-4.14 6.286-6.062.955-1.885.837-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748z" />
+                            </svg>
                         </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Carne Bovina 1kg <strong>Corte americano</strong></h5>
-                                <p class="card-text">Carne bovina 1kg corte americano</p>
-                                <h4 class="card-title"><strong>R$ 37,90</strong></h4>
+                    </div>
 
-                                <div id="btn-e-cupom">
-                                    <button class="add-to-cart" data-price="37.90">adicione no carrinho</button>
+                </article>
 
-                                    <div id="cupom">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="white"
-                                            class="bi bi-truck" viewBox="0 0 16 16">
-                                            <path
-                                                d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
-                                        </svg>
-                                        <p id="pfretegratis">cupom de frete grátis disponível</p>
+
+                <article>
+                    <div class="card mb-3 w-50 mx-auto">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="imagens/carne-bovina.png" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Carne Bovina 1kg <strong>Corte americano</strong></h5>
+                                    <p class="card-text">Carne bovina 1kg corte americano</p>
+                                    <h4 class="card-title"><strong>R$ 37,90</strong></h4>
+
+                                    <div id="btn-e-cupom">
+                                        <button class="add-to-cart" data-price="37.90">adicione no carrinho</button>
+
+                                        <div id="cupom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="white"
+                                                class="bi bi-truck" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
+                                            </svg>
+                                            <p id="pfretegratis">cupom de frete grátis disponível</p>
+                                        </div>
                                     </div>
+
+
+
                                 </div>
 
 
 
                             </div>
 
-
-
                         </div>
-
+                        <div class="favoritar" onclick="toggleFavorito(this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none"
+                                class="heart-icon" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385C2.905 9.36 5.5 11.5 8 13.5c2.5-2 5.095-4.14 6.286-6.062.955-1.885.837-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748z" />
+                            </svg>
+                        </div>
                     </div>
-                    <div class="favoritar" onclick="toggleFavorito(this)">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" class="heart-icon"
-                            viewBox="0 0 16 16">
-                            <path
-                                d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385C2.905 9.36 5.5 11.5 8 13.5c2.5-2 5.095-4.14 6.286-6.062.955-1.885.837-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748z" />
-                        </svg>
-                    </div>
-                </div>
 
-            </article>
+                </article>
 
 
-        </section>
+            </section>
 
+        </div>
+
+
+
+
+
+
+<div id="carouselProdutos" class="carousel slide d-md-none" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <!-- PRODUTO 1 -->
+    <div class="carousel-item active">
+      <div class="card mx-auto text-center" style="width: 15rem;">
+       
+        <div class="card-body">
+             <img src="imagens/arroz.jpg" class="card-img-top" alt="Arroz">
+          <h5 class="card-title">Arroz 1kg <strong>Prato Fino</strong></h5>
+          <h5 >R$ 13,00</h5>
+          <button class="btn btn-success w-100 add-to-cart" data-price="13.00">Adicionar ao carrinho</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRODUTO 2 -->
+    <div class="carousel-item">
+      <div class="card mx-auto text-center" style="width: 15rem;">
+        <div class="card-body">
+                    <img src="imagens/café.png" class="card-img-top" alt="Café">
+
+          <h5 class="card-title">Café 500g <strong>3 Corações</strong></h5>
+          <h5>R$ 16,90</h5>
+          <button class="btn btn-success w-100 add-to-cart" data-price="16.90">Adicionar ao carrinho</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRODUTO 3 -->
+    <div class="carousel-item">
+      <div class="card mx-auto text-center" style="width: 15rem;">
+        <div class="card-body">
+                    <img src="imagens/Macarrão.jpg" class="card-img-top" alt="Macarrão">
+
+          <h5 class="card-title">Espaguete 500g <strong>Faz-bem</strong></h5>
+          <h5>R$ 17,90</h5>
+          <button class="btn btn-success w-100 add-to-cart" data-price="17.90">Adicionar ao carrinho</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRODUTO 4 -->
+    <div class="carousel-item">
+      <div class="card mx-auto text-center" style="width: 15rem;">
+        <div class="card-body">
+                    <img src="imagens/Feijão.jpg" class="card-img-top" alt="Feijão">
+
+          <h5 class="card-title">Feijão 1kg <strong>Camil</strong></h5>
+          <h5 >R$ 13,00</h5>
+          <button class="btn btn-success w-100 add-to-cart" data-price="13.00">Adicionar ao carrinho</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRODUTO 5 -->
+    <div class="carousel-item">
+      <div class="card mx-auto text-center" style="width: 15rem;">
+        <div class="card-body">
+                    <img src="imagens/carne-bovina.png" class="card-img-top" alt="Carne">
+
+          <h5 class="card-title">Carne Bovina 1kg <strong>Corte americano</strong></h5>
+          <h5>R$ 37,90</h5>
+          <button class="btn btn-success w-100 add-to-cart" data-price="37.90">Adicionar ao carrinho</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Botões de navegação com ícones pretos -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselProdutos" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" style="filter: invert(1);"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselProdutos" data-bs-slide="next">
+    <span class="carousel-control-next-icon" style="filter: invert(1);"></span>
+    <span class="visually-hidden">Próximo</span>
+  </button>
+</div>
 
 
 
@@ -347,7 +437,7 @@
 
     <script src="index.js"></script>
 
-   
+
     <footer class="py-5" id="footerverde">
         <div id="row">
             <div class="col-6 col-md-2 mb-3">
@@ -454,7 +544,7 @@
                 </ul>
             </nav>
         </div>
-    </footer>>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
