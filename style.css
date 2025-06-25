@@ -20,8 +20,19 @@ figcaption {
 
 /* CSS PÁGINA DE INÍCIO */
 
+#header-market {
+    background-image: url(./imagens/img-header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    padding-left: .5rem;
+}
+
 @media (min-width: 768px) {
-    #body-index #header-market {
+    #header-market {
         background-image: url(./imagens/img-header.png);
         background-size: cover;
         background-repeat: no-repeat;
@@ -35,27 +46,6 @@ figcaption {
     }
 }
 
-#header-market {
-    background-image: url(./imagens/img-header.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 6rem;
-    display: flex;
-    align-items: center;
-    margin-bottom: 10vh;
-    padding-bottom: 1rem;
-}
-
-@media (min-width: 768px) {
-    #header-market #logo-market {
-        width: 20rem;
-        height: 10rem;
-        object-fit: contain;
-        margin: 1rem;
-    }
-}
-
 #logo-market {
     width: 8rem;
     height: 10rem;
@@ -63,7 +53,23 @@ figcaption {
 }
 
 @media (min-width: 768px) {
-    #header-market #nav-market {
+    #logo-market {
+        width: 20rem;
+        height: 10rem;
+        object-fit: contain;
+        margin: 1rem;
+    }
+}
+
+#nav-market {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    #nav-market {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -71,14 +77,18 @@ figcaption {
     }
 }
 
-#nav-market {
+#container-search-market {
+    width: 6rem;
+    height: 1.6rem;
+    border: 1px solid #FFFFFF;
+    border-radius: 15px;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    gap: 20px;
 }
 
 @media (min-width: 768px) {
-    #nav-market #container-search-market {
+    #container-search-market {
         width: 18rem;
         height: 3rem;
         border: 1px solid #FFFFFF;
@@ -89,28 +99,18 @@ figcaption {
     }
 }
 
-#container-search-market {
-    width: 7rem;
-    height: 2rem;
-    border: 1px solid #FFFFFF;
-    border-radius: 15px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-@media (min-width: 768px) {
-    #container-search-market .bi-search {
-        color: #FFFFFF;
-        margin: 0.625rem;
-        font-size: 2rem;
-    }
-}
-
 .bi-search {
     color: #FFFFFF;
     margin: 0.300rem;
     font-size: .875rem;
+}
+
+@media (min-width: 768px) {
+    .bi-search {
+        color: #FFFFFF;
+        margin: 0.625rem;
+        font-size: 2rem;
+    }
 }
 
 #search-market {
@@ -122,8 +122,14 @@ figcaption {
     color: #FFFFFF;
 }
 
+#search-market::placeholder {
+    color: #FFFFFF;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
 @media (min-width: 768px) {
-    #container-search-market #search-market::placeholder {
+    #search-market::placeholder {
         width: 100%;
         height: 100%;
         background-color: transparent;
@@ -134,23 +140,17 @@ figcaption {
     }
 }
 
-#search-market::placeholder {
-    color: #FFFFFF;
-    font-size: 0.7rem;
-    font-weight: bold;
+#container-header-btns {
+    display: none
 }
 
 @media (min-width: 768px) {
-    #nav-market #container-header-btns {
+    #container-header-btns {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 30px;
     }
-}
-
-#container-header-btns {
-    display: none
 }
 
 #btn-login {
@@ -189,13 +189,6 @@ figcaption {
     color: rgb(61, 61, 61);
 }
 
-@media (min-width: 768px) {
-    #container-bag-market .bi-bag {
-        color: #FFFFFF;
-        font-size: 2rem;
-    }
-}
-
 #container-bag-market {
     display: flex;
     justify-content: center;
@@ -205,14 +198,18 @@ figcaption {
 
 .bi-bag {
     color: #FFFFFF;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 @media (min-width: 768px) {
-    #container-bag-market #bag-market {
-        display: flex;
-        flex-direction: column;
-        margin-top: 12px;
+    .bi-bag {
+        color: #FFFFFF;
+        font-size: 2rem;
+        transition: .3s ease;
+    }
+
+    .bi-bag:hover {
+        opacity: .7;
     }
 }
 
@@ -220,13 +217,14 @@ figcaption {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 12px;
+    margin-top: 16px;
 }
 
 @media (min-width: 768px) {
-    #container-bag-market #bag-market p {
-        color: #FFFFFF;
-        font-size: 0.875rem;
+    #bag-market {
+        display: flex;
+        flex-direction: column;
+        margin-top: 12px;
     }
 }
 
@@ -236,8 +234,9 @@ figcaption {
 }
 
 @media (min-width: 768px) {
-    #nav-market .bi-list {
-        display: none;
+    #bag-market p {
+        color: #FFFFFF;
+        font-size: 0.875rem;
     }
 }
 
@@ -246,20 +245,46 @@ figcaption {
     font-size: 1.5rem;
 }
 
+@media (min-width: 768px) {
+    .bi-list {
+        display: none;
+    }
+}
+
 #section-promo {
     background-image: url(./imagens/Imagem-Super-Mercado-Faz-bem.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 100vh;
+    height: 20rem;
     padding: 1rem;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+    #section-promo {
+        background-image: url(./imagens/Imagem-Super-Mercado-Faz-bem.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+        padding: 1rem;
+        margin-bottom: 10rem;
+    }
 }
 
 #logo-market-2 {
-    width: 160px;
-    height: 50px;
+    width: 80px;
+    height: 25px;
+}
+
+@media (min-width: 768px) {
+    #logo-market-2 {
+        width: 160px;
+        height: 50px;
+    }
 }
 
 #container-promo {
@@ -267,27 +292,62 @@ figcaption {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-left: 5rem;
+}
+
+@media (min-width: 768px) {
+    #container-promo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 5rem;
+    }
 }
 
 #title-promo {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+    #title-promo {
     font-size: 6.25rem;
     color: #FFFFFF;
     font-weight: bold;
     text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    }
 }
 
 .txt-promo {
     color: #7c7c7c;
+    font-size: .8rem;
+    text-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+    .txt-promo {
+    color: #7c7c7c;
     font-size: 1.2rem;
     text-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    }
 }
 
 #discount-promo {
     color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+    #discount-promo {
+    color: #FFFFFF;
     font-size: 7rem;
     font-weight: bold;
     text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    }
 }
 
 #btn-come {
@@ -309,16 +369,36 @@ figcaption {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    border-top: 2px solid #FFA931;
+    border-bottom: 2px solid #FFA931;
+    margin-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+    #section-categories {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     padding: 5rem;
     border-top: 2px solid #FFA931;
     border-bottom: 2px solid #FFA931;
     margin-bottom: 10rem;
+    }
 }
 
 #title-categories {
     color: black;
+    font-size: rem;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    #title-categories {
+    color: black;
     font-size: 7.5rem;
     font-weight: bold;
+    }
 }
 
 #container-categories {
