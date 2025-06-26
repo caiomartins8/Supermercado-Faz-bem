@@ -18,6 +18,7 @@ figcaption {
 }
 
 /* CSS HEADER */
+
 #header-market {
     background-image: url(./imagens/img-header.png);
     background-size: cover;
@@ -1366,14 +1367,14 @@ font-size: 2rem;
 
 #search-market::placeholder {
     color: #FFFFFF;
+}
 /* Carrossel em mobile */
+
 @media (max-width: 768px) {
   .cards-desktop {
     display: none;
   }
-
-
- 
+}
  #li-verde a,#mainalimentos nav ul #li-preto a{
     font-size: 0.7rem;
     font-weight: bold;
