@@ -16,43 +16,80 @@
 
 <body>  
 
-    <header id="header-market">
+  <header id="header-market">
         <figure>
             <a href="index.html">
                 <img src="./imagens/logo.png" alt="Logo Super Mercado Faz-bem" id="logo-market">
             </a>
             <figcaption>Logo Super Mercado Faz-bem</figcaption>
         </figure>
-
+ 
         <nav id="nav-market">
             <div id="container-search-market">
                 <i class="bi bi-search"></i>
                 <input type="text" placeholder="Buscar..." id="search-market">
             </div>
-
+ 
             <div id="container-header-btns">
-                <a href="sign-up.html">
+                <a href="login.html">
                     <button id="btn-login">
                         <p>Entrar</p>
                     </button>
                 </a>
-
-                <a href="criarconta.html">
+ 
+                <a href="./sign-up.html">
                     <button id="btn-sign">
                         <p id="txt-sign">Cadastrar</p>
                     </button>
                 </a>
             </div>
-
+ 
             <div id="container-bag-market">
                 <a href=""><i class="bi bi-bag"></i></a>
                 <div id="bag-market">
-                    <p id="bag-money">R$ 0,0</p>
-                    <p>0 itens</p>
+                    <p>R$ 0,0 <br> 0 itens</p>
                 </div>
             </div>
+ 
+            <label for="toggle-menu">
+                <i class="bi bi-list"></i>
+            </label>
         </nav>
     </header>
+ 
+    <input type="checkbox" id="toggle-menu" hidden>
+ 
+    <aside class="container-aside">
+        <div id="menu-aside">
+            <div id="header-aside">
+                <figure>
+                    <img src="./imagens/Logo-Supermercado-Faz-bem.png" alt="Logo do Supermercado Faz-bem"
+                        id="logo-aside">
+                    <figcaption>Logo do Supermercado Faz-bem</figcaption>
+                </figure>
+                <label for="toggle-menu">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </label>
+            </div>
+ 
+            <div id="content-aside">
+                <a href="contatos.html">Contato</a>
+                <a href="sobrenos.html">Sobre</a>
+                <a href="ajuda.html">Ajuda</a>
+                <a href="sign-up.html">Sign in</a>
+                <a href="login.html">Login</a>
+            </div>
+ 
+            <div id="social-media-aside">
+                <a href="https://www.facebook.com" target="_blank">facebook</a>
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                <a href="https://x.com/home" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </aside>
+ 
 
 
 
@@ -65,7 +102,8 @@
 
         <h1>CATEGORIAS</h1>
         <br>
-
+<div class="center">
+    
          <nav>
 
             <ul>
@@ -79,6 +117,7 @@
 
 
         </nav>
+</div>
 
         <br>
         <br>
@@ -312,7 +351,7 @@
                             <img src="imagens/escovas-de-dente.png" class="card-img-top" alt="Arroz">
                             <h5 class="card-title">Escova <strong>Colgate</strong></h5>
                             <h5>R$ 14,90</h5>
-                            <button class="btn btn-success w-100 add-to-cart" data-price="13.00">Adicionar ao
+                            <button class="btn btn-success-carrossel w-100 add-to-cart" data-price="13.00">Adicionar ao
                                 carrinho</button>
                         </div>
                     </div>
@@ -326,7 +365,7 @@
 
                             <h5 class="card-title">Toalhas <strong>Karsten</strong></h5>
                             <h5>R$ 129,90 kg</h5>
-                            <button class="btn btn-success w-100 add-to-cart" data-price="16.90">Adicionar ao
+                            <button class="btn btn-success-carrossel w-100 add-to-cart" data-price="16.90">Adicionar ao
                                 carrinho</button>
                         </div>
                     </div>
@@ -340,7 +379,7 @@
 
                             <h5 class="card-title">Escova de Cabelo <strong>Bellhair</strong></h5>
                             <h5>R$ 19,90 kg</h5>
-                            <button class="btn btn-success w-100 add-to-cart" data-price="17.90">Adicionar ao
+                            <button class="btn btn-success-carrossel w-100 add-to-cart" data-price="17.90">Adicionar ao
                                 carrinho</button>
                         </div>
                     </div>
@@ -354,7 +393,7 @@
 
                             <h5 class="card-title">Sabonete <strong> Natura</strong></h5>
                             <h5>R$ 44,90 kg</h5>
-                            <button class="btn btn-success w-100 add-to-cart" data-price="13.00">Adicionar ao
+                            <button class="btn btn-success-carrossel w-100 add-to-cart" data-price="13.00">Adicionar ao
                                 carrinho</button>
                         </div>
                     </div>
@@ -368,7 +407,7 @@
 
                             <h5 class="card-title">Cotonete<strong> Cotton</strong></h5>
                             <h5>R$ 9,90 kg</h5>
-                            <button class="btn btn-success w-100 add-to-cart" data-price="37.90">Adicionar ao
+                            <button class="btn btn-success-carrossel w-100 add-to-cart" data-price="37.90">Adicionar ao
                                 carrinho</button>
                         </div>
                     </div>

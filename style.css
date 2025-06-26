@@ -153,93 +153,7 @@ p{
     font-size: 0.875rem;
 }
 
-@media (max-width: 768px) {
 
-    #header-market {
-        flex-direction: column;
-        box-shadow: none;
-        height: 25%;
-        margin-bottom: 0;
-        background-image: none;
-        background-color: #FFA931;
-    }
-
-    #logo-market {
-        width: 70vw;
-        height: auto;
-        margin: 0 0 1rem 0;
-    }
-
-    #nav-market {
-        gap: 0.5rem;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #container-search-market {
-        width: 90vw;
-        height: 2rem;
-        border-radius: 10px;
-    }
-
-     header figure svg {
-    display: flex;
-    color: white;
-    
-}
-
-#btn-sign{
-    color: #FFA931;
-}
-
-   header figure {
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px ;
-    align-items: center;
-   }
-
-    .bi-search {
-        font-size: 1rem;
-        margin: 0 0.8rem;
-    }
-
-    #search-market {
-        font-size: 1rem;
-    }
-
-    #container-header-btns {
-        gap: 10px;
-        width: 90vw;
-        justify-content: center;
-    }
-
-    .bi-bag{
-        display: none;
-    }
-
-    #btn-login, #btn-sign {
-        width: 100px;
-        height: 30px;
-        font-size: 1rem;
-        padding:1vw;
-        border-radius: 5px;
-
-    }
-
-    #container-bag-market {
-     display: none;
-    }
-
-    .bi-bag {
-        font-size: 1.8rem;
-    }
-
-    #bag-market p {
-        font-size: 0.9rem;
-    }
-}
 
 
 /*INDEX*/
@@ -1169,8 +1083,6 @@ font-size: 2rem;
 
 .card-body{
     display: flex;
-    align-items: start;
-    justify-content: start;
     flex-direction: column;
 
 }
@@ -1201,10 +1113,24 @@ font-size: 2rem;
     border-radius: 50px;
     font-size: 1.5rem;
     font-weight: 600;
-    width: 18%;
+    width: 22%;
     gap: 10px;
     text-align: center;
 }
+
+@media (max-width:768px){
+#mainalimentos nav ul #li-preto ,#li-verde {
+    padding: 0.3rem;
+        border: 1px solid black;
+
+}
+
+.center{
+    margin-right: 80px;
+}
+
+}
+
 
 #mainalimentos nav ul #li-preto a {
     text-decoration: none; 
@@ -1222,9 +1148,10 @@ font-size: 2rem;
     border-radius: 50px;
     font-size: 1.5rem;
     font-weight: 600;
-    width: 18%;
+    width: 22%;
     gap: 10px;
     text-align: center;
+
 }
 
 #li-verde a {
@@ -1233,7 +1160,10 @@ font-size: 2rem;
     display: block;        
     width: 100%;
     height: 100%;
-    border-radius: 50px;    
+    border-radius: 50px;  
+        display: flex;
+    align-items: center;
+    justify-content: center;  
 }
 
 
@@ -1367,18 +1297,22 @@ font-size: 2rem;
 
 #search-market::placeholder {
     color: #FFFFFF;
+}
 /* Carrossel em mobile */
 @media (max-width: 768px) {
+
   .cards-desktop {
     display: none;
   }
 
 
- 
  #li-verde a,#mainalimentos nav ul #li-preto a{
     font-size: 0.7rem;
     font-weight: bold;
 }
+
+}
+
 
 @media (min-width: 768px) {
     #search-market::placeholder {
@@ -1452,6 +1386,7 @@ font-size: 2rem;
     color: #FFFFFF;
     font-size: 1.3rem;
 }
+
 
 @media (min-width: 768px) {
     .bi-bag {
@@ -1760,7 +1695,7 @@ font-size: 2rem;
     }
 }
 
-.carousel {
+ #body-index .carousel {
     display: none;
 }
 
@@ -2124,6 +2059,21 @@ font-size: 2rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+@media (max-width:768px){
+    .dp{
+        display: flex;
+        align-items: center;
+        justify-content:center ;
+        flex-direction: column;
+    }
+
+    #mainalimentos nav ul{
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+}
 /*FOOTER VERDE */
 
 #footerverde {
@@ -2135,6 +2085,13 @@ font-size: 2rem;
 .btn-success {
     background-color: #6BBA5C;
     margin-top: 20vh;
+    color: white;
+    width: 100%;
+    margin-left: 0;
+}
+
+.btn-success-carrossel {
+    background-color: #6BBA5C;
     color: white;
     width: 100%;
     margin-left: 0;
@@ -2501,6 +2458,4 @@ footer a {
     border-bottom: 1px solid #BDB8B8;
     cursor: pointer;
     border-color:#6BBA5C ;
-}
-}
 }
