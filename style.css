@@ -257,7 +257,8 @@ figcaption {
     }
 }
 
-/* CSS PÁGINA DE INÍCIO */
+
+/*CSS INDEX */
 
 #section-promo {
     background-image: url(./imagens/Imagem-Super-Mercado-Faz-bem.png);
@@ -778,7 +779,7 @@ figcaption {
     object-fit: contain;
 }
 
-/*CCS PAGINA DE SIGN-UP */
+/*CSS PAGINA DE SIGN-UP */
 
 #bodycriarconta {
     background-image: url(imagens/cookie-animal.png);
@@ -899,9 +900,77 @@ figcaption {
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-/*FOOTER VERDE */
+/* PÁGINA DE CONTATOS*/
+
+#maincontatos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+#maincontatos form {
+
+    display: flex;
+    border-radius: 12px 12px 12px 12px;
+    align-items: center;
+    flex-direction: column;
+    border: solid 1px #FFA931;
+    padding-bottom: 1vw;
+}
+
+#maincontatos form button {
+    border: none;
+    border-radius: 3px;
+    background-color: #FFA931;
+    color: white;
+    font-size: 1rem;
+    padding: 0.6vw;
+
+}
+
+#maincontatos form h2 {
+    text-align: center;
+    padding: 3rem;
+}
+
+#melhoriacontatos {
+    font-size: 3rem;
+    text-align: start;
+}
+
+#maincontatos form h2 {
+    background-color: #FFA931;
+    color: white;
+    font-weight: 700;
+    border-radius: 10px 10px 0 0;
+}
+
+#txtcentercontatos {
+    text-align: center;
+}
+
+#mainconatato form label {
+    text-align: start;
+}
+
+textarea {
+    width: 100%;
+}
+
+.form-container {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 50px auto;
+}
 
 #footerverde {
+    background-color: #6BBA5C;
+}
+
+.btn-success {
     background-color: #6BBA5C;
     margin-top: 20vh;
     color: white;
@@ -1532,4 +1601,157 @@ footer a {
 .bi-arrow-right {
     color: black;
     font-weight: bold;
+    border-color: #6BBA5C;
+}
+
+/*CSS CATEGORIA ALIMENTOS*/
+
+#cupom {
+    background-color: #FFA931;
+    color: white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 0.5vw;
+}
+
+
+#pfretegratis {
+    margin: 0;
+    font-size: 0.7rem;
+}
+
+#btn-e-cupom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#btn-e-cupom button {
+    color: white;
+    background-color: #6BBA5C;
+    border-radius: 10px;
+    border: none;
+    padding: 0.8vw;
+    font-size: 0.8rem;
+
+}
+
+.favoritar {
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.heart-icon {
+    fill: none;
+    stroke: gray;
+    transition: all 0.3s ease;
+
+}
+
+.favoritado .heart-icon {
+    fill: #6BBA5C;
+    stroke: #437c37;
+}
+
+
+.card-title {
+    font-size: 2rem;
+}
+
+.card-text {
+    color: rgb(106, 106, 106);
+}
+
+.card-body {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+
+}
+
+.card {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.img-fluid {
+    height: 100% !important;
+    width: 100%;
+}
+
+#mainalimentos h1 {
+    font-size: rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+#mainalimentos nav ul #li-preto {
+    list-style-type: none;
+    border: 3px solid black;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 18%;
+    gap: 10px;
+    text-align: center;
+}
+
+#mainalimentos nav ul #li-preto a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#li-verde {
+    background-color: #6BBA5C;
+    color: white;
+    list-style-type: none;
+    border: 3px solid #6BBA5C;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 18%;
+    gap: 10px;
+    text-align: center;
+}
+
+#li-verde a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+#mainalimentos nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.w-50 {
+    width: 60% !important;
+}
+
+.cards-desktop {
+    display: block;
+}
+
+.cards-mobile-carousel {
+    display: none;
 }
