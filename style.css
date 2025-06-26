@@ -18,7 +18,7 @@ figcaption {
     display: none;
 }
 
-/* CSS PÁGINA DE INÍCIO */
+/* CSS HEADER */
 
 #header-market {
     background-image: url(./imagens/img-header.png);
@@ -79,13 +79,18 @@ figcaption {
 }
 
 #container-search-market {
-    width: 6rem;
+    width: 7rem;
     height: 1.6rem;
     border: 1px solid #FFFFFF;
     border-radius: 15px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    transition: .3s ease;
+}
+
+#container-search-market:hover {
+    box-shadow: 0px 0px 12px 6px #FFA931;
 }
 
 @media (min-width: 768px) {
@@ -103,7 +108,7 @@ figcaption {
 .bi-search {
     color: #FFFFFF;
     margin: 0.300rem;
-    font-size: .875rem;
+    font-size: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -225,7 +230,7 @@ figcaption {
     #bag-market {
         display: flex;
         flex-direction: column;
-        margin-top: 12px;
+        margin-top: 16px;
     }
 }
 
@@ -251,6 +256,8 @@ figcaption {
         display: none;
     }
 }
+
+/* CSS PÁGINA DE INÍCIO */
 
 #section-promo {
     background-image: url(./imagens/Imagem-Super-Mercado-Faz-bem.png);
@@ -545,13 +552,13 @@ figcaption {
     font-size: 6rem;
     color: #FFFFFF;
     font-weight: bold;
-    text-shadow: 0px 8px 40px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.1);
 }
 
 .txt-carousel {
     font-size: 1.5rem;
     color: #FFFFFF;
-    text-shadow: 0px 8px 40px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.1);
 }
 
 .container-btn-carousel {
@@ -567,6 +574,11 @@ figcaption {
     font-size: .875rem;
     font-weight: bold;
     color: #FFFFFF;
+    transition: all .3s ease;
+}
+
+.btn-carousel:hover {
+    opacity: .9;
 }
 
 .btn-carousel-2 {
@@ -578,11 +590,17 @@ figcaption {
     font-size: .875rem;
     font-weight: bold;
     color: #454545;
+    transition: all .3s ease;
+}
+
+.btn-carousel-2:hover {
+    opacity: .9;
 }
 
 /* CSS SIDE BAR */
 
 .container-aside {
+    display: block;
     position: fixed;
     top: 0;
     right: -100%;
@@ -596,10 +614,17 @@ figcaption {
     overflow: auto;
 }
 
+@media (min-width: 768px) {
+    .container-aside {
+        display: none;
+    }
+}
+
 #menu-aside {
     background-color: #FDFDFD;
     width: 100%;
-    height: 18.75rem;
+    height: 21.875rem;
+    border-radius: 0 0 15px 15px;
 }
 
 #header-aside {
@@ -730,7 +755,7 @@ figcaption {
 }
 
 #mainlogin a {
-    color: rgb(84, 84, 84);
+    color: #393939;
     font-weight: 600;
     text-decoration: none;
 }
@@ -843,6 +868,7 @@ figcaption {
 
 #inferior-content-sign-up a {
     font-size: 1rem;
+    font-weight: 600;
     color: #393939;
     text-decoration: none;
 }
@@ -892,15 +918,103 @@ figcaption {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
+}
+
+@media(min-width: 768px) {
+    #footerverde nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
 }
 
 #parteescurafooterverde {
-    background-color: #437c37;
+    background-color: #508A44;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    #parteescurafooterverde {
+        background-color: #508A44;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+}
+
+#content-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    #content-footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 205px;
+        width: 100%;
+        margin-right: 6rem;
+    }
+}
+
+#logo-footer {
+    width: 100%;
+    height: 64px;
+    object-fit: contain;
+}
+
+@media (min-width: 768px) {
+    #logo-footer {
+        width: 100%;
+        height: 62px;
+        object-fit: contain;
+    }
+}
+
+#cartoesfooterverde {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    #cartoesfooterverde {
+        display: block;
+        width: 100%;
+        height: 12px;
+        cursor: pointer;
+    }
+}
+
+#row {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    #row {
+        display: flex;
+        align-items: start;
+        justify-content: space-around;
+        margin-left: 2.5rem;
+    }
 }
 
 #footerverde h5 {
@@ -930,23 +1044,21 @@ footer {
 
 footer nav ul li {
     list-style-type: none;
-
 }
 
 footer nav ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
-}
-
-footer figure img {
-    width: 30vw;
+    gap: 8px;
 }
 
 @media (min-width: 768px) {
-    footer figure img {
-        width: 10vw;
+    footer nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
     }
 }
 
@@ -956,7 +1068,9 @@ footer figure img {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 80px;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -966,7 +1080,43 @@ footer figure img {
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        height: 80px;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+}
+
+#content-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    #content-footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 222px;
+        width: 100%;
+        margin-right: 6rem;
+    }
+}
+
+#logo-footer {
+    width: 100%;
+    height: 64px;
+    object-fit: contain;
+}
+
+@media (min-width: 768px) {
+    #logo-footer {
+        width: 100%;
+        height: 62px;
+        object-fit: contain;
     }
 }
 
@@ -983,15 +1133,20 @@ footer figure img {
     }
 }
 
-#cartoesfooterverde {
-    width: 14vw;
-    height: 2vh;
-}
-
 #row {
     display: flex;
     align-items: start;
     justify-content: space-around;
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    #row {
+        display: flex;
+        align-items: start;
+        justify-content: space-around;
+        margin-left: 2.5rem;
+    }
 }
 
 .title-footer-yellow {
@@ -1075,13 +1230,10 @@ footer a {
     }
 }
 
-
 /*CSS PÁGINA DE TERMOS*/
 
 #maintermos h2 {
     color: #6BBA5C;
-    padding-bottom: 2vw;
-    padding-top: 2vw;
 
 }
 
@@ -1103,26 +1255,59 @@ footer a {
     border-radius: 5px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
     border: solid 1px #6BBA5C;
-    width: 60%;
-    padding: 2vw;
+    width: 90%;
+    padding: 5vw;
     margin-bottom: 50px;
 }
 
-#maintermos input {
-    width: 5vw;
-    height: 5vh;
-
+@media (min-width: 768px) {
+    #ptermos {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 50px;
+        border-radius: 5px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+        border: solid 1px #6BBA5C;
+        border-radius: 15px;
+        width: 60%;
+        padding: 2vw;
+        margin-bottom: 50px;
+    }
 }
 
-#maintermos label {
-    font-size: 1rem;
-
+#ptermos h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: black;
 }
 
-#dp {
+@media (min-width: 768px) {
+    #ptermos h1 {
+        font-size: 3rem;
+        font-weight: 500;
+        color: black;
+    }
+}
+
+#ptermos p {
+    font-size: .875rem;
+}
+
+.txtverdetermos {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .txtverdetermos {
+        display: block;
+        font-size: 2rem;
+        width: 100%;
+    }
 }
 
 /*CSS PAGINA SOBRE NOS*/
@@ -1137,13 +1322,32 @@ footer a {
 /* CSS PÁGINA AJUDA */
 
 #main-help {
-    margin: 5rem;
+    margin: 2rem;
+}
+
+@media (min-width: 768px) {
+    #main-help {
+        margin: 5rem;
+    }
 }
 
 #section-help {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 12px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    #section-help {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 #title-ico-help {
@@ -1154,24 +1358,49 @@ footer a {
 
 .bi-headset {
     font-size: 3rem;
+    color: black;
 }
 
 #title-help {
-    font-size: 3.125rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: black;
 }
 
+@media (min-width: 768px) {
+    #title-help {
+        font-size: 3.125rem;
+        font-weight: 500;
+        color: black;
+    }
+}
+
 #subtitle-help {
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 400;
     color: black;
 }
 
+@media (min-width: 768px) {
+    #subtitle-help {
+        font-size: 2rem;
+        font-weight: 400;
+        color: black;
+    }
+}
+
 #subtitle-bold-help {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: black;
+}
+
+@media (min-width: 768px) {
+    #subtitle-bold-help {
+        font-size: 2.5rem;
+        font-weight: 400;
+        color: black;
+    }
 }
 
 #txt-help {
@@ -1186,7 +1415,7 @@ footer a {
 }
 
 #container-input-help {
-    width: 35vw;
+    width: 14.0625rem;
     height: 6vh;
     background-color: #F4F3F3;
     border-radius: 24px;
@@ -1194,6 +1423,19 @@ footer a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media (min-width: 768px) {
+    #container-input-help {
+        width: 28.125rem;
+        height: 6vh;
+        background-color: #F4F3F3;
+        border-radius: 24px;
+        border: 1px solid #968989;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 #input-help {
@@ -1209,7 +1451,7 @@ footer a {
 }
 
 #input-seta-help {
-    width: 2.5vw;
+    width: 38px;
     height: 32px;
     background-color: #6BBA5C;
     border-radius: 50%;
@@ -1219,6 +1461,23 @@ footer a {
     align-items: center;
     font-size: 1.5rem;
     color: white;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    #input-seta-help {
+        width: 32px;
+        height: 32px;
+        background-color: #6BBA5C;
+        border-radius: 50%;
+        margin-right: .3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        color: white;
+        cursor: pointer;
+    }
 }
 
 #section-2-help {
@@ -1226,7 +1485,17 @@ footer a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 12px;
+    gap: 50px;
+}
+
+@media (min-width: 768px) {
+    #section-2-help {
+        padding-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+    }
 }
 
 #title-articles-help {
@@ -1237,10 +1506,30 @@ footer a {
 
 .container-articles-help {
     width: 100%;
-    height: 10vh;
+    height: 12vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #BDB8B8;
     cursor: pointer;
+}
+
+.txt-articles-help {
+    font-size: .8rem;
+    color: black;
+    font-weight: 400;
+    width: 80%;
+}
+
+@media (min-width: 768px) {
+    .txt-articles-help {
+        font-size: 1rem;
+        color: black;
+        font-weight: 400;
+    }
+}
+
+.bi-arrow-right {
+    color: black;
+    font-weight: bold;
 }
