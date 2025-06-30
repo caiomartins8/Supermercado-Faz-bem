@@ -507,7 +507,7 @@ figcaption {
     }
 }
 
-#body-index .carousel {
+.carousel {
     display: none;
 }
 
