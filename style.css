@@ -18,7 +18,7 @@ figcaption {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 6rem;
+    height: 7rem;
     display: flex;
     align-items: center;
     padding-left: .5rem;
@@ -65,7 +65,7 @@ figcaption {
 @media (min-width: 768px) {
     #nav-market {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         gap: 6.25rem;
     }
@@ -216,14 +216,12 @@ figcaption {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 16px;
 }
 
 @media (min-width: 768px) {
     #bag-market {
         display: flex;
         flex-direction: column;
-        margin-top: 16px;
     }
 }
 
@@ -509,7 +507,7 @@ figcaption {
     }
 }
 
-.carousel {
+#body-index .carousel {
     display: none;
 }
 
@@ -676,7 +674,7 @@ figcaption {
     right: 0;
 }
 
-/*CSS PAGINA DE LOGIN */
+/*CSS PÁGINA DE LOGIN */
 
 .btn-warning {
     background-color: #FFA931;
@@ -701,6 +699,7 @@ figcaption {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    height: 100vh;
 }
 
 #mainlogin {
@@ -712,7 +711,7 @@ figcaption {
     margin-bottom: 100px;
     width: 80%;
     background-color: white;
-    padding: 3vw;
+    padding: 4vw;
     border-radius: 30px;
 }
 
@@ -774,11 +773,11 @@ figcaption {
 /*CSS PAGINA DE SIGN-UP */
 
 #bodycriarconta {
-    background-image: url(imagens/cookie-animal.png);
+    background-image: url(./imagens/cookie-animal.png);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    height: 100%;
+    height: 100vh;
 }
 
 #logologin {
@@ -806,30 +805,30 @@ figcaption {
         align-items: center;
         width: 40%;
         background-color: white;
-        padding: 2vw;
         border-radius: 30px;
     }
 }
 
 #maincriarconta {
-    margin-top: 6vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    padding-bottom: 6.5rem;
 }
 
 @media (min-width: 768px) {
     #maincriarconta {
-        margin-top: 6vh;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 30px;
+        padding-bottom: 0;
     }
 }
+
 
 #maincriarconta article h1 {
     font-size: 4rem;
@@ -935,7 +934,6 @@ figcaption {
     justify-content: space-around;
     width: 100%;
     height: 100%;
-    padding: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -1026,6 +1024,7 @@ footer {
     margin-top: 20vh;
     color: white;
     width: 100%;
+    height: 100%;
     margin-left: 0;
 }
 
@@ -1067,7 +1066,7 @@ footer nav ul {
     justify-content: center;
     height: 100%;
     width: 100%;
-    padding: 1rem;
+    padding-bottom: 6rem;
 }
 
 @media (min-width: 768px) {
@@ -1079,7 +1078,7 @@ footer nav ul {
         justify-content: space-around;
         width: 100%;
         height: 100%;
-        padding: 0;
+        padding-bottom: 0;
     }
 }
 
@@ -1533,7 +1532,7 @@ footer a {
 }
 
 /* PÁGINA DE CONTATOS*/
- 
+
 #maincontatos {
     display: flex;
     align-items: center;
@@ -1541,9 +1540,9 @@ footer a {
     flex-direction: row;
     gap: 4rem;
 }
- 
+
 #maincontatos form {
- 
+
     display: flex;
     border-radius: 12px 12px 12px 12px;
     align-items: center;
@@ -1551,7 +1550,7 @@ footer a {
     border: solid 1px #FFA931;
     padding-bottom: 1vw;
 }
- 
+
 #maincontatos form button {
     border: none;
     border-radius: 3px;
@@ -1559,48 +1558,48 @@ footer a {
     color: white;
     font-size: 1rem;
     padding: 0.6vw;
- 
+
 }
- 
+
 #maincontatos form h2 {
     text-align: center;
     padding: 3rem;
 }
- 
+
 #melhoriacontatos {
     font-size: 3rem;
     text-align: start;
 }
- 
+
 #maincontatos form h2 {
     background-color: #FFA931;
     color: white;
     font-weight: 700;
     border-radius: 10px 10px 0 0;
 }
- 
+
 #txtcentercontatos {
     text-align: center;
 }
- 
+
 #mainconatato form label {
     text-align: start;
 }
- 
+
 textarea {
     width: 100%;
 }
- 
+
 .form-container {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     max-width: 600px;
     margin: 50px auto;
 }
- 
+
 /*CSS CATEGORIA ALIMENTOS*/
- 
-#cupom{
+
+#cupom {
     background-color: #FFA931;
     color: white;
     border-radius: 50px;
@@ -1611,141 +1610,203 @@ textarea {
     gap: 10px;
     padding: 0.5vw;
 }
- 
- 
-#pfretegratis{
+
+
+#pfretegratis {
     margin: 0;
     font-size: 0.7rem;
 }
- 
-#btn-e-cupom{
+
+#btn-e-cupom {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
 }
- 
-#btn-e-cupom button{
-color: white;
-background-color: #6BBA5C;
-border-radius: 10px;
-border: none;
-padding: 0.8vw;
-font-size: 0.8rem;
- 
+
+#btn-e-cupom button {
+    color: white;
+    background-color: #6BBA5C;
+    border-radius: 10px;
+    border: none;
+    padding: 0.8vw;
+    font-size: 0.8rem;
+
 }
+
 .favoritar {
-  cursor: pointer;
-  margin-top: 10px;
-  text-align: right;
-  padding-right: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: right;
+    padding-right: 30px;
 }
- 
+
 .heart-icon {
-  fill: none;
-  stroke: gray;
-  transition: all 0.3s ease;
- 
+    fill: none;
+    stroke: gray;
+    transition: all 0.3s ease;
 }
- 
+
+.heart-icon:hover {
+    fill: #6BBA5C;
+    stroke: #6BBA5C;
+}
+
 .favoritado .heart-icon {
-  fill: #6BBA5C;
-  stroke: #437c37;
+    fill: #6BBA5C;
+    stroke: #437c37;
 }
- 
- 
-.card-title{
-font-size: 2rem;
+
+
+.card-title {
+    font-size: 2rem;
 }
- 
-.card-text{
+
+.card-text {
     color: rgb(106, 106, 106);
 }
- 
-.card-body{
+
+.card-body {
     display: flex;
     align-items: start;
     justify-content: start;
     flex-direction: column;
- 
+
 }
- 
-.card{
+
+.card {
     align-items: center;
     justify-content: space-between;
     display: flex;
     flex-direction: row;
     gap: 20px;
-   
+
 }
- 
-.img-fluid{
+
+.img-fluid {
     height: 100% !important;
     width: 100%;
+    object-fit: cover;
 }
- 
+
 #mainalimentos h1 {
-    font-size:  rem ;
+    font-size: 2rem;
     font-weight: 800;
     text-align: center;
 }
- 
+
+@media (min-width: 768px) {
+    #mainalimentos h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        text-align: center;
+    }
+}
+
 #mainalimentos nav ul #li-preto {
     list-style-type: none;
-    border: 3px solid black;
+    border: 2px solid black;
     border-radius: 50px;
-    font-size: 1.5rem;
+    font-size: .675rem;
     font-weight: 600;
     width: 18%;
-    gap: 10px;
+    gap: 20px;
     text-align: center;
 }
- 
+
+@media (min-width: 768px) {
+    #mainalimentos nav ul #li-preto {
+        list-style-type: none;
+        border: 3px solid black;
+        border-radius: 50px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        width: 18%;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
 #mainalimentos nav ul #li-preto a {
     text-decoration: none;
-    color: inherit;        
-    display: block;      
+    color: inherit;
+    display: block;
     width: 100%;
     height: 100%;
 }
- 
+
 #li-verde {
     background-color: #6BBA5C;
     color: white;
     list-style-type: none;
     border: 3px solid #6BBA5C;
     border-radius: 50px;
-    font-size: 1.5rem;
+    font-size: .675rem;
     font-weight: 600;
     width: 18%;
     gap: 10px;
     text-align: center;
 }
- 
+
+@media (min-width: 768px) {
+    #li-verde {
+        background-color: #6BBA5C;
+        color: white;
+        list-style-type: none;
+        border: 3px solid #6BBA5C;
+        border-radius: 50px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        width: 18%;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
 #li-verde a {
     text-decoration: none;
-    color: inherit;      
-    display: block;        
+    color: inherit;
+    display: block;
     width: 100%;
     height: 100%;
-    border-radius: 50px;    
+    border-radius: 50px;
 }
- 
+
 #mainalimentos nav ul {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: row;
 }
- 
+
 .w-50 {
     width: 60% !important;
 }
- 
+
 .cards-desktop {
-  display: block;
+    display: block;
 }
- 
+
+@media (max-width: 768px) {
+    .cards-desktop {
+        display: none;
+    }
+
+    .card-body {
+        align-items: center;
+
+    }
+
+    .btn-success {
+        margin-top: 0;
+    }
+}
+
+
 .cards-mobile-carousel {
-  display: none;
+    display: none;
+}
+
+p{
+    margin-bottom: 0 !important;
 }
