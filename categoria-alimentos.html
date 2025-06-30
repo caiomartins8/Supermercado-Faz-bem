@@ -16,42 +16,43 @@
 
 <body>
 
-  <header id="header-market">
+    <header id="header-market">
         <figure>
             <a href="index.html">
                 <img src="./imagens/logo.png" alt="Logo Super Mercado Faz-bem" id="logo-market">
             </a>
             <figcaption>Logo Super Mercado Faz-bem</figcaption>
         </figure>
- 
+
         <nav id="nav-market">
             <div id="container-search-market">
                 <i class="bi bi-search"></i>
                 <input type="text" placeholder="Buscar..." id="search-market">
             </div>
- 
+
             <div id="container-header-btns">
                 <a href="login.html">
                     <button id="btn-login">
                         <p>Entrar</p>
                     </button>
                 </a>
- 
+
                 <a href="./sign-up.html">
                     <button id="btn-sign">
                         <p id="txt-sign">Cadastrar</p>
                     </button>
                 </a>
             </div>
- 
+
             <div id="container-bag-market">
                 <a href=""><i class="bi bi-bag"></i></a>
                 <div id="bag-market">
+                    <p>R$ 0,0 0 itens</p>
                     <p>R$ 0,0 <br> 0 itens</p>
                 </div>
             </div>
- 
-            <label for="toggle-menu">
+           
+            <a href="">
                 <i class="bi bi-list"></i>
             </label>
         </nav>
@@ -369,9 +370,22 @@
 
 
 
-<div id="carouselProdutos" class="carousel slide d-md-none" data-bs-ride="carousel">
-  <div class="carousel-inner">
+        <div id="carouselProdutos" class="carousel slide d-md-none" data-bs-ride="carousel">
+            <div class="carousel-inner">
 
+                <!-- PRODUTO 1 -->
+                <div class="carousel-item active">
+                    <div class="card mx-auto text-center" style="width: 15rem;">
+
+                        <div class="card-body">
+                            <img src="imagens/arroz.jpg" class="card-img-top" alt="Arroz">
+                            <h5 class="card-title">Arroz 1kg <strong>Prato Fino</strong></h5>
+                            <h5>R$ 13,00</h5>
+                            <button class="btn btn-success w-100 add-to-cart" data-price="13.00">Adicionar ao
+                                carrinho</button>
+                        </div>
+                    </div>
+                </div>
     <!-- PRODUTO 1 -->
     <div class="carousel-item active">
       <div class="card mx-auto text-center" style="width: 15rem;">
@@ -385,12 +399,19 @@
       </div>
     </div>
 
-    <!-- PRODUTO 2 -->
-    <div class="carousel-item">
-      <div class="card mx-auto text-center" style="width: 15rem;">
-        <div class="card-body">
-                    <img src="imagens/café.png" class="card-img-top" alt="Café">
+                <!-- PRODUTO 2 -->
+                <div class="carousel-item">
+                    <div class="card mx-auto text-center" style="width: 15rem;">
+                        <div class="card-body">
+                            <img src="imagens/café.png" class="card-img-top" alt="Café">
 
+                            <h5 class="card-title">Café 500g <strong>3 Corações</strong></h5>
+                            <h5>R$ 16,90</h5>
+                            <button class="btn btn-success w-100 add-to-cart" data-price="16.90">Adicionar ao
+                                carrinho</button>
+                        </div>
+                    </div>
+                </div>
           <h5 class="card-title">Café 500g <strong>3 Corações</strong></h5>
           <h5>R$ 16,90</h5>
           <button class="btn btn-success-carrossel w-100 add-to-cart" data-price="16.90">Adicionar ao carrinho</button>
@@ -398,12 +419,19 @@
       </div>
     </div>
 
-    <!-- PRODUTO 3 -->
-    <div class="carousel-item">
-      <div class="card mx-auto text-center" style="width: 15rem;">
-        <div class="card-body">
-                    <img src="imagens/Macarrão.jpg" class="card-img-top" alt="Macarrão">
+                <!-- PRODUTO 3 -->
+                <div class="carousel-item">
+                    <div class="card mx-auto text-center" style="width: 15rem;">
+                        <div class="card-body">
+                            <img src="imagens/Macarrão.jpg" class="card-img-top" alt="Macarrão">
 
+                            <h5 class="card-title">Espaguete 500g <strong>Faz-bem</strong></h5>
+                            <h5>R$ 17,90</h5>
+                            <button class="btn btn-success w-100 add-to-cart" data-price="17.90">Adicionar ao
+                                carrinho</button>
+                        </div>
+                    </div>
+                </div>
           <h5 class="card-title">Espaguete 500g <strong>Faz-bem</strong></h5>
           <h5>R$ 17,90</h5>
           <button class="btn btn-success-carrossel w-100 add-to-cart" data-price="17.90">Adicionar ao carrinho</button>
@@ -411,12 +439,19 @@
       </div>
     </div>
 
-    <!-- PRODUTO 4 -->
-    <div class="carousel-item">
-      <div class="card mx-auto text-center" style="width: 15rem;">
-        <div class="card-body">
-                    <img src="imagens/Feijão.jpg" class="card-img-top" alt="Feijão">
+                <!-- PRODUTO 4 -->
+                <div class="carousel-item">
+                    <div class="card mx-auto text-center" style="width: 15rem;">
+                        <div class="card-body">
+                            <img src="imagens/Feijão.jpg" class="card-img-top" alt="Feijão">
 
+                            <h5 class="card-title">Feijão 1kg <strong>Camil</strong></h5>
+                            <h5>R$ 13,00</h5>
+                            <button class="btn btn-success w-100 add-to-cart" data-price="13.00">Adicionar ao
+                                carrinho</button>
+                        </div>
+                    </div>
+                </div>
           <h5 class="card-title">Feijão 1kg <strong>Camil</strong></h5>
           <h5 >R$ 13,00</h5>
           <button class="btn btn-success-carrossel w-100 add-to-cart" data-price="13.00">Adicionar ao carrinho</button>
@@ -424,31 +459,32 @@
       </div>
     </div>
 
-    <!-- PRODUTO 5 -->
-    <div class="carousel-item">
-      <div class="card mx-auto text-center" style="width: 15rem;">
-        <div class="card-body">
-                    <img src="imagens/carne-bovina.png" class="card-img-top" alt="Carne">
+                <!-- PRODUTO 5 -->
+                <div class="carousel-item">
+                    <div class="card mx-auto text-center" style="width: 15rem;">
+                        <div class="card-body">
+                            <img src="imagens/carne-bovina.png" class="card-img-top" alt="Carne">
 
-          <h5 class="card-title">Carne Bovina 1kg <strong>Corte americano</strong></h5>
-          <h5>R$ 37,90</h5>
-          <button class="btn btn-success-carrossel w-100 add-to-cart" data-price="37.90">Adicionar ao carrinho</button>
+                            <h5 class="card-title">Carne Bovina 1kg <strong>Corte americano</strong></h5>
+                            <h5>R$ 37,90</h5>
+                            <button class="btn btn-success w-100 add-to-cart" data-price="37.90">Adicionar ao
+                                carrinho</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Botões de navegação com ícones pretos -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProdutos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" style="filter: invert(1);"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProdutos" data-bs-slide="next">
+                <span class="carousel-control-next-icon" style="filter: invert(1);"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
         </div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Botões de navegação com ícones pretos -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselProdutos" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" style="filter: invert(1);"></span>
-    <span class="visually-hidden">Anterior</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselProdutos" data-bs-slide="next">
-    <span class="carousel-control-next-icon" style="filter: invert(1);"></span>
-    <span class="visually-hidden">Próximo</span>
-  </button>
-</div>
 
 
 
