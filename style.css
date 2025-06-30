@@ -189,8 +189,7 @@ font-size: 2rem;
 @media (max-width:768px){
 #mainalimentos nav ul #li-preto ,#li-verde {
     padding: 0.3rem;
-        border: 1px solid black;
-
+    border: 1px solid black;
 }
 
 .center{
@@ -1501,7 +1500,6 @@ footer a {
 
 #maintermos h2 {
     color: #6BBA5C;
-
 }
 
 #maintermos {
