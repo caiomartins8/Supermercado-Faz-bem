@@ -130,6 +130,8 @@ figcaption {
 
 #search-market::placeholder {
     color: #FFFFFF;
+    font-size: .7rem;
+    font-weight: bold;
 }
 
 @media (min-width: 768px) {
