@@ -507,12 +507,12 @@ figcaption {
     }
 }
 
-.carousel {
+#carouselExampleDark {
     display: none;
 }
 
 @media (min-width: 768px) {
-    .carousel {
+    #carouselExampleDark {
         display: block;
         margin: 4rem;
     }
@@ -1685,7 +1685,7 @@ textarea {
 
 .img-fluid {
     height: 100% !important;
-    width: 100%;
+    width: 27vw;
     object-fit: cover;
 }
 
@@ -1804,7 +1804,7 @@ textarea {
 
 
 .cards-mobile-carousel {
-    display: none;
+    display: block;
 }
 
 p{
