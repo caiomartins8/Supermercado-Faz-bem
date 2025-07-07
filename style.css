@@ -5,6 +5,7 @@
     margin: 0;
     box-sizing: border-box !important;
     font-family: "Poppins", sans-serif !important;
+    text-decoration: none !important;
 }
 
 body{
@@ -401,13 +402,13 @@ margin-top: 50px;
 }
 
 .li-item-market-barrer {
-    font-weight: 400;
+    font-weight: 200;
     font-size: 1.5rem;
 }
 
 @media (min-width: 768px) {
     .li-item-market-barrer {
-        font-weight: 400;
+        font-weight: 100;
         font-size: 2rem;
     }
 }
@@ -837,7 +838,49 @@ margin-top: 50px;
     right: 0;
 }
 
+#sidebar-categories {
+    display: block;
+    position: fixed;
+    width: 15vw;
+    height: 40vh;
+    display: flex;
+    background-color: #F8F8F8;
+    border: 2px solid #D8D8D8;
+    justify-content: flex-start;
+    z-index: 999;
+    transition: .3s ease;
+    overflow: auto;
+}
 
+#container-aside-categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.container-item-sidebar-categories {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: #878787;
+    transition: .3s ease-in-out;
+}
+
+.container-item-sidebar-categories:hover {
+    font-size: 1.3rem;
+}
+
+.item-sidebar-categories {
+    width: 8vw;
+    height: 5vh;
+    font-weight: 400;
+}
+
+#arrow-aside-categories {
+    color: #878787;
+}
 
 /*CSS PÁGINA DE LOGIN */
 
