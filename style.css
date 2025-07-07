@@ -3,8 +3,13 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    box-sizing: border-box !important;
+    font-family: "Poppins", sans-serif !important;
+    text-decoration: none !important;
+}
+
+body{
+    background-color: #F8F8F8;
 }
 
 figcaption {
@@ -20,9 +25,10 @@ figcaption {
     width: 100%;
     height: 7rem;
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding-left: .5rem;
-    padding-bottom: .5rem;
+    width: 100%;
+    height: 4rem;
 }
 
 @media (min-width: 768px) {
@@ -31,19 +37,16 @@ figcaption {
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
-        height: 12rem;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin-bottom: 10vh;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 30px 40px;
+        height: 10rem;
     }
 }
 
 #logo-market {
-    width: 8rem;
-    height: 10rem;
+    height: 50px;
     object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (min-width: 768px) {
@@ -51,35 +54,37 @@ figcaption {
         width: 20rem;
         height: 10rem;
         object-fit: contain;
-        margin: 1rem;
     }
 }
 
 #nav-market {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 20px;
+    width: 100%;
 }
 
 @media (min-width: 768px) {
     #nav-market {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
-        gap: 6.25rem;
+        width: 100%;
+        height: 10rem;
     }
 }
 
 #container-search-market {
-    width: 7rem;
+    width: 6rem;
     height: 1.6rem;
-    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
     border-radius: 15px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    gap: 10px;
     transition: .3s ease;
+    padding: 1vh;
 }
 
 #container-search-market:hover {
@@ -90,24 +95,24 @@ figcaption {
     #container-search-market {
         width: 18rem;
         height: 3rem;
-        border: 1px solid #FFFFFF;
+        background-color: #FFFFFF;
         border-radius: 15px;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
+        gap: 10px;
+        transition: .3s ease;
     }
 }
 
 .bi-search {
-    color: #FFFFFF;
-    margin: 0.300rem;
+    color: #000;
     font-size: 1rem;
 }
 
 @media (min-width: 768px) {
     .bi-search {
-        color: #FFFFFF;
-        margin: 0.625rem;
+        color: #000;
         font-size: 2rem;
     }
 }
@@ -118,11 +123,11 @@ figcaption {
     background-color: transparent;
     border: none;
     outline: none;
-    color: #FFFFFF;
+    color: #000;
 }
 
 #search-market::placeholder {
-    color: #FFFFFF;
+    color: #000;
     font-size: .7rem;
     font-weight: bold;
 }
@@ -134,7 +139,7 @@ figcaption {
         background-color: transparent;
         border: none;
         outline: none;
-        color: #FFFFFF;
+        color: #000;
         font-size: 0.875rem;
     }
 }
@@ -152,40 +157,24 @@ figcaption {
     }
 }
 
-#btn-login {
+.btn-header {
     width: 120px;
     height: 50px;
-    border: 2px solid #FFFFFF;
-    outline: none;
-    background-color: transparent;
-    padding: 15px;
-    border-radius: 15px;
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 0.875rem;
-    transition: .3s ease;
-}
-
-#btn-login:hover {
-    opacity: .7;
-}
-
-#btn-sign {
-    width: 120px;
-    height: 50px;
+    background-color: #FFFFFF;
     border: none;
     outline: none;
-    background-color: #FFFFFF;
     padding: 15px;
     border-radius: 15px;
-    color: black;
+    color: #000;
     font-weight: bold;
     font-size: 0.875rem;
     transition: .3s ease;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
 }
 
-#btn-sign:hover {
-    color: rgb(61, 61, 61);
+.btn-header:hover {
+    background-color: #b9b9b9;
+    color: #000000;
 }
 
 #container-bag-market {
@@ -195,19 +184,19 @@ figcaption {
     gap: 7px;
 }
 
-.bi-bag {
+.bi-bag-fill {
     color: #FFFFFF;
     font-size: 1.3rem;
 }
 
 @media (min-width: 768px) {
-    .bi-bag {
+    .bi-bag-fill {
         color: #FFFFFF;
         font-size: 2rem;
         transition: .3s ease;
     }
 
-    .bi-bag:hover {
+    .bi-bag-fill:hover {
         opacity: .7;
     }
 }
@@ -249,26 +238,202 @@ figcaption {
 }
 
 /*CSS INDEX */
+#row-maisvendidos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+
+
+#maisvendidos {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    width: 100%;
+    gap: 15vh;
+    flex-direction: column;
+    background-color: white;
+    padding: 6vh;
+    border: 0.5px solid black;
+}
+
+#maisvendidos .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+#maisvendidos .card .card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#maisvendidos .card .card-text {
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+#titulomaisvendidos {
+    color: #FFA931;
+    font-size: 2rem;
+    margin-left: 5vw;
+}
+
+#maisvendidos .card .card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+
+.carousel-item img {
+    height: 70vh; 
+    object-fit: cover; 
+  }
+
+  #pinauguracao{
+    font-size: 1.8rem;
+    color: #FFA931;
+    text-align: start;
+margin-left: 5vw;
+margin-top: 50px;
+
+  }
+
+.card-img-top {
+    height: 25vh;
+}
+
+#maisvendidos button {
+    background-color: #FFA931 !important;
+}
+
+#section-item-market {
+    width: 100%;
+    height: 3rem;
+    background-color: #FFA931;
+}
+
+#nav-item-market {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#ul-item-market {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+    gap: 10px;
+    color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+    #ul-item-market {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style-type: none;
+        gap: 40px;
+        color: #FFFFFF;
+    }
+}
+
+#li-item-market-unic {
+    font-weight: 600;
+    font-size: .675rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: .3s ease;
+}
+
+@media (min-width: 768px) {
+    #li-item-market-unic {
+        font-weight: 600;
+        font-size: 1rem;
+        padding: .5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: .3s ease;
+    }
+}
+
+#li-item-market-unic:hover {
+    background-color: #afafaf;
+    padding: .5rem;
+    border-radius: 10px;
+}
+
+.li-item-market {
+    font-weight: 600;
+    font-size: .675rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: .5rem;
+    transition: .3s ease;
+}
+
+@media (min-width: 768px) {
+    .li-item-market {
+        font-weight: 600;
+        font-size: 1rem;
+        color: #FFFFFF;
+        text-decoration: none;
+        padding: .5rem;
+        transition: .3s ease;
+    }
+}
+
+.li-item-market:hover {
+    background-color: #afafaf;
+    padding: .5rem;
+    border-radius: 10px;
+}
+
+.li-item-market-barrer {
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .li-item-market-barrer {
+        font-weight: 100;
+        font-size: 2rem;
+    }
+}
 
 #section-promo {
-    background-image: url(./imagens/Imagem-Super-Mercado-Faz-bem.png);
+    background-image: url(./imagens/img-main.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
     height: 20rem;
     padding: 1rem;
-    margin-bottom: 5rem;
+    margin-bottom: 5vh;
 }
 
 @media (min-width: 768px) {
     #section-promo {
-        background-image: url(./imagens/Imagem-Super-Mercado-Faz-bem.png);
+        background-image: url(./imagens/img-main.jpeg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         width: 100%;
-        height: 100vh;
+        height: 85vh;
         padding: 1rem;
         margin-bottom: 10rem;
     }
@@ -299,13 +464,14 @@ figcaption {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        margin-left: 5rem;
+        margin-left: 4rem;
+        gap: 10px;
     }
 }
 
 #title-promo {
     font-size: 2.5rem;
-    color: #FFFFFF;
+    color: #D32936;
     font-weight: bold;
     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.1);
 }
@@ -313,28 +479,28 @@ figcaption {
 @media (min-width: 768px) {
     #title-promo {
         font-size: 6.25rem;
-        color: #FFFFFF;
+        color: #D32936;
         font-weight: bold;
         text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
     }
 }
 
 .txt-promo {
-    color: #7c7c7c;
+    color: #FFA931;
     font-size: .8rem;
     text-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 768px) {
     .txt-promo {
-        color: #7c7c7c;
-        font-size: 1.2rem;
+        color: #FFA931;
+        font-size: 2rem;
         text-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
     }
 }
 
 #discount-promo {
-    color: #FFFFFF;
+    color: #D32936;
     font-size: 3rem;
     font-weight: bold;
     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.1);
@@ -342,7 +508,7 @@ figcaption {
 
 @media (min-width: 768px) {
     #discount-promo {
-        color: #FFFFFF;
+        color: #D32936;
         font-size: 7rem;
         font-weight: bold;
         text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
@@ -672,6 +838,50 @@ figcaption {
 
 #toggle-menu:checked+.container-aside {
     right: 0;
+}
+
+#sidebar-categories {
+    display: block;
+    position: fixed;
+    width: 15vw;
+    height: 40vh;
+    display: flex;
+    background-color: #F8F8F8;
+    border: 2px solid #D8D8D8;
+    justify-content: flex-start;
+    z-index: 999;
+    transition: .3s ease;
+    overflow: auto;
+}
+
+#container-aside-categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.container-item-sidebar-categories {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: #878787;
+    transition: .3s ease-in-out;
+}
+
+.container-item-sidebar-categories:hover {
+    font-size: 1.3rem;
+}
+
+.item-sidebar-categories {
+    width: 8vw;
+    height: 5vh;
+    font-weight: 400;
+}
+
+#arrow-aside-categories {
+    color: #878787;
 }
 
 /*CSS PÁGINA DE LOGIN */
@@ -1805,8 +2015,4 @@ textarea {
 
 .cards-mobile-carousel {
     display: block;
-}
-
-p{
-    margin-bottom: 0 !important;
 }
