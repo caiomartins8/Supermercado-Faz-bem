@@ -22,6 +22,8 @@ figcaption {
     background-image: url(./imagens/img-header.png);
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 7rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2013,8 +2015,4 @@ textarea {
 
 .cards-mobile-carousel {
     display: block;
-}
-
-p {
-    margin-bottom: 0 !important;
 }
