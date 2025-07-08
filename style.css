@@ -909,7 +909,7 @@ figcaption {
 @media (min-width: 768px) {
     .item-sidebar-categories {
         width: 8vw;
-        height: 1vh;
+        height: 2vh;
         font-weight: 400;
     }
 }
