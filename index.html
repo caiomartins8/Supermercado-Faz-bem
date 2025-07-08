@@ -42,7 +42,10 @@
             </div>
 
             <div id="container-bag-market">
-                <a href=""><i class="bi bi-bag-fill"></i></a>
+                <label for="toggle-bag">
+                    <i class="bi bi-bag-fill"></i>
+                </label>
+            <div id="bag-market">
                 <p id="bag-market-txt"> R$ 0,0 <br> 0 itens</p>
             </div>
 
@@ -51,6 +54,33 @@
             </label>
         </nav>
     </header>
+
+    <!-- C sacola -->
+    <input type="checkbox" id="toggle-bag" hidden>
+
+    <!-- modal da sacola  -->
+    <div class="modal-overlay-bag">
+        <div class="modal-content-bag">
+
+            <h2>Sacola</h2>
+            <br>
+            <br>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#737373" class="bi bi-bag-x"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M6.146 8.146a.5.5 0 0 1 .708 0L8 9.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 10l1.147 1.146a.5.5 0 0 1-.708.708L8 10.707l-1.146 1.147a.5.5 0 0 1-.708-.708L7.293 10 6.146 8.854a.5.5 0 0 1 0-.708" />
+                <path
+                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+            </svg>
+            <br>
+            <br>
+            <br>
+            <p> <strong>SEU CARRINHO ESTÁ VAZIO !</strong> <br>
+                Navegue pelo nosso site, faça buscas e adicione produtos a sua sacola!</p>
+            <label for="toggle-bag" class="btn-close-bag">Fechar</label>
+        </div>
+    </div>
 
     <input type="checkbox" id="toggle-menu" hidden>
 
@@ -63,9 +93,7 @@
                     <figcaption>Logo do Supermercado Faz-bem</figcaption>
                 </figure>
                 <label for="toggle-menu">
-                    <span class="material-symbols-outlined">
-                        close
-                    </span>
+                    <i class="bi bi-x-lg"></i>
                 </label>
             </div>
 
@@ -122,9 +150,9 @@
                         <i class="bi bi-grid-3x3-gap-fill"></i> Categorias
                     </label>
                     <li class="li-item-market-barrer"> | </li>
-                    <li><a href="#" class="li-item-market">novidades</a></li>
+                    <li><a href="#carousel-banner" class="li-item-market">novidades</a></li>
                     <li><a href="#" class="li-item-market">folhetos</a></li>
-                    <li><a href="#" class="li-item-market">mais vendidos</a></li>
+                    <li><a href="#maisvendidos" class="li-item-market">mais vendidos</a></li>
                 </ul>
             </nav>
         </section>
@@ -154,55 +182,129 @@
             </h1>
 
             <div id="row-maisvendidos">
-                <div class="card-revealing">
-                    <figure>
-                        <img src="imagens/cenoura.png" class="card-img-revealing" alt="cenoura">
-                    </figure>
-                    <div class="card-revealing-content">
-                        <h5 class="card-revealing-title">Cenoura</h5>
+                <div id="container-card-revealing">
+                    <div class="card-revealing">
+                        <figure>
+                            <img src="imagens/cenoura.png" class="card-img-revealing" alt="cenoura">
+                        </figure>
+                        <div class="card-revealing-content">
+                            <h5 class="card-revealing-title">Cenoura</h5>
 
-                        <p class="card-revealing-txt"> Nutritiva e decorativa, deixa os <br>
-                            pratos mais coloridos.</p>
+                            <p class="card-revealing-txt"> Nutritiva e decorativa, deixa os <br>
+                                pratos mais coloridos.</p>
 
-                        <a href="categoria-hortifruti.html">
-                            <button id="btn-come">me leve até a categoria</button>
-                        </a>
+                            <a href="categoria-hortifruti.html">
+                                <button class="btn-revealing">me leve até a categoria</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card-revealing">
+                        <figure>
+                            <img src="imagens/coca-cola.png" class="card-img-revealing" alt="coca-cola">
+                            <figcaption>coca-cola</figcaption>
+                        </figure>
+                        <div class="card-revealing-content">
+                            <h5 class="card-revealing-title">Coca-Cola</h5>
+
+                            <p class="card-revealing-txt">As refrescâncias que você <br>
+                                precisa para elevar o seu dia!</p>
+
+                            <a href="categoria-bebidas.html">
+                                <button class="btn-revealing">me leve até a categoria</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card-revealing">
+                        <figure>
+                            <img src="imagens/carne-bovina.png" class="card-img-revealing" alt="carne bovina">
+                            <figcaption>carne bovina</figcaption>
+                        </figure>
+                        <div class="card-revealing-content">
+                            <h5 class="card-revealing-title">Carne Bovina</h5>
+
+                            <p class="card-revealing-txt">gostos prediletos que enfatizam <br> sua mesa com um sabor
+                                vigorante</p>
+
+                            <a href="categoria-alimentos.html">
+                                <button class="btn-revealing">me leve até a categoria</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="card-revealing">
+                            <figure>
+                                <img src="imagens/cenoura.png" class="card-img-revealing" alt="cenoura">
+                            </figure>
+                            <div class="card-revealing-content">
+                                <h5 class="card-revealing-title">Cenoura</h5>
+
+                                <p class="card-revealing-txt"> Nutritiva e decorativa, deixa os <br>
+                                    pratos mais coloridos.</p>
+
+                                <a href="categoria-hortifruti.html">
+                                    <button class="btn-revealing">me leve até a categoria</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <div class="card-revealing">
+                            <figure>
+                                <img src="imagens/coca-cola.png" class="card-img-revealing" alt="coca-cola">
+                                <figcaption>coca-cola</figcaption>
+                            </figure>
+                            <div class="card-revealing-content">
+                                <h5 class="card-revealing-title">Coca-Cola</h5>
+
+                                <p class="card-revealing-txt">As refrescâncias que você <br>
+                                    precisa para elevar o seu dia!</p>
+
+                                <a href="categoria-bebidas.html">
+                                    <button class="btn-revealing">me leve até a categoria</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card-revealing">
+                            <figure>
+                                <img src="imagens/carne-bovina.png" class="card-img-revealing" alt="carne bovina">
+                                <figcaption>carne bovina</figcaption>
+                            </figure>
+                            <div class="card-revealing-content">
+                                <h5 class="card-revealing-title">Carne Bovina</h5>
+
+                                <p class="card-revealing-txt">carne na sua mesa com um sabor
+                                    vigorante.</p>
+
+                                <a href="categoria-alimentos.html">
+                                    <button class="btn-revealing">me leve até a categoria</button>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="card-revealing">
-                    <figure>
-                        <img src="imagens/coca-cola.png" class="card-img-revealing" alt="coca-cola">
-                        <figcaption>coca-cola</figcaption>
-                    </figure>
-                    <div class="card-revealing-content">
-                        <h5 class="card-revealing-title">Coca-Cola</h5>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
 
-                        <p class="card-revealing-txt">As refrescâncias que você <br>
-                            precisa para elevar o seu dia!</p>
-
-                        <a href="categoria-bebidas.html">
-                            <button id="btn-come">me leve até a categoria</button>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card-revealing">
-                    <figure>
-                        <img src="imagens/carne-bovina.png" class="card-img-revealing" alt="carne bovina">
-                        <figcaption>carne bovina</figcaption>
-                    </figure>
-                    <div class="card-revealing-content">
-                        <h5 class="card-revealing-title">Carne Bovina</h5>
-
-                        <p class="card-revealing-txt">gostos prediletos que enfatizam <br> sua mesa com um sabor
-                            vigorante</p>
-
-                        <a href="categoria-alimentos.html">
-                            <button id="btn-come">me leve até a categoria</button>
-                        </a>
-                    </div>
-                </div>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
 
@@ -219,7 +321,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <figure>
-                            <img src="./imagens/Banner-sfb.png" class="d-block w-100"
+                            <img src="./imagens/Banner-sfb.png" class="d-block w-100 img-banner"
                                 alt="fundadores do Supermercado Faz-bem">
                             <figcaption>fundadores do Supermercado Faz-bem</figcaption>
                         </figure>
@@ -227,14 +329,16 @@
 
                     <div class="carousel-item">
                         <figure>
-                            <img src="./imagens/banner-bebidas.jpg" class="d-block w-100" alt="banner do vinho Mathe">
+                            <img src="./imagens/banner-bebidas.jpg" class="d-block w-100 img-banner"
+                                alt="banner do vinho Mathe">
                             <figcaption>banner do Vinho Mathe</figcaption>
                         </figure>
                     </div>
 
                     <div class="carousel-item">
                         <figure>
-                            <img src="./imagens/banner-hortifruti.jpeg" class="d-block w-100" alt="banner hortifruti">
+                            <img src="./imagens/banner-hortifruti.jpeg" class="d-block w-100 img-banner"
+                                alt="banner hortifruti">
                             <figcaption>banner hortifruti</figcaption>
                         </figure>
                     </div>
@@ -262,37 +366,25 @@
     <footer class="py-5">
         <div id="row">
             <div class="col-6 col-md-2 mb-3">
-                <a href="sobrenos.html">
-                    <h5 class="title-footer-yellow">Sobre Nós</h5>
-                </a>
+
+                <h5 class="title-footer-yellow">Sobre Nós</h5>
+
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2">
                         <a href="contatos.html" class="nav-link p-0 text-body-secondary">Contato</a>
                     </li>
 
                     <li class="nav-item mb-2">
-                        <a href="sobrenos.html" class="nav-link p-0 text-body-secondary">Informações da empresa</a>
-                    </li>
-
-                    <li class="nav-item mb-2">
-                        <a href="sobrenos.html" class="nav-link p-0 text-body-secondary">História</a>
+                        <a href="sobrenos.html" class="nav-link p-0 text-body-secondary">Sobre nós</a>
                     </li>
                 </ul>
             </div>
 
             <div class="col-6 col-md-2 mb-3">
-                <a href="contatos.html">
-                    <h5 class="title-footer-yellow">Contato</h5>
-                </a>
+
+                <h5 class="title-footer-yellow">Suporte</h5>
+
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2">
-                        <a href="contatos.html" class="nav-link p-0 text-body-secondary">Telefone</a>
-                    </li>
-
-                    <li class="nav-item mb-2">
-                        <a href="contatos.html" class="nav-link p-0 text-body-secondary">Chat</a>
-                    </li>
-
                     <li class="nav-item mb-2">
                         <a href="ajuda.html" class="nav-link p-0 text-body-secondary">Ajuda</a>
                     </li>
