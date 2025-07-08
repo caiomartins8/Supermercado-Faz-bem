@@ -19,14 +19,14 @@
 
 <body>
     <header id="header-market">
-        <figure>
-            <a href="index.html">
-                <img src="./imagens/logo.png" alt="Logo Super Mercado Faz-bem" id="logo-market">
-            </a>
-            <figcaption>Logo Super Mercado Faz-bem</figcaption>
-        </figure>
-
         <nav id="nav-market">
+            <figure>
+                <a href="index.html">
+                    <img src="./imagens/logo.png" alt="Logo Super Mercado Faz-bem" id="logo-market">
+                </a>
+                <figcaption>Logo Super Mercado Faz-bem</figcaption>
+            </figure>
+
             <div id="container-search-market">
                 <i class="bi bi-search"></i>
                 <input type="text" placeholder="Buscar..." id="search-market">
@@ -34,22 +34,24 @@
 
             <div id="container-header-btns">
                 <a href="login.html">
-                    <button id="btn-login">
+                    <button class="btn-header">
                         <p>Entrar</p>
                     </button>
                 </a>
 
                 <a href="./sign-up.html">
-                    <button id="btn-sign">
+                    <button class="btn-header">
                         <p id="txt-sign">Cadastrar</p>
                     </button>
                 </a>
             </div>
 
             <div id="container-bag-market">
-                <a href=""><i class="bi bi-bag"></i></a>
+                <label for="toggle-bag">
+                    <i class="bi bi-bag-fill"></i>
+                </label>
                 <div id="bag-market">
-                    <p>R$ 0,0 <br> 0 itens</p>
+                    <p id="bag-market-txt"> R$ 0,0 <br> 0 itens</p>
                 </div>
             </div>
 
@@ -58,6 +60,33 @@
             </label>
         </nav>
     </header>
+
+    <!-- C sacola -->
+    <input type="checkbox" id="toggle-bag" hidden>
+
+    <!-- modal da sacola  -->
+    <div class="modal-overlay-bag">
+        <div class="modal-content-bag">
+
+            <h2>Sacola</h2>
+            <br>
+            <br>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#737373" class="bi bi-bag-x"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M6.146 8.146a.5.5 0 0 1 .708 0L8 9.293l1.146-1.147a.5.5 0 1 1 .708.708L8.707 10l1.147 1.146a.5.5 0 0 1-.708.708L8 10.707l-1.146 1.147a.5.5 0 0 1-.708-.708L7.293 10 6.146 8.854a.5.5 0 0 1 0-.708" />
+                <path
+                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+            </svg>
+            <br>
+            <br>
+            <br>
+            <p> <strong>SEU CARRINHO ESTÁ VAZIO !</strong> <br>
+                Navegue pelo nosso site, faça buscas e adicione produtos a sua sacola!</p>
+            <label for="toggle-bag" class="btn-close-bag">Fechar</label>
+        </div>
+    </div>
 
     <input type="checkbox" id="toggle-menu" hidden>
 
@@ -70,25 +99,52 @@
                     <figcaption>Logo do Supermercado Faz-bem</figcaption>
                 </figure>
                 <label for="toggle-menu">
-                    <span class="material-symbols-outlined">
-                        close
-                    </span>
+                    <i class="bi bi-x-lg"></i>
                 </label>
-            </div>
-
-            <div id="content-aside">
-                <a href="contatos.html">Contato</a>
-                <a href="sobrenos.html">Sobre</a>
-                <a href="ajuda.html">Ajuda</a>
-                <a href="sign-up.html">Sign in</a>
-                <a href="login.html">Login</a>
             </div>
 
             <div id="social-media-aside">
                 <a href="https://www.facebook.com" target="_blank">facebook</a>
-                <a href="https://www.instagram.com" target="_blank">Instagram</a>
-                <a href="https://x.com/home" target="_blank">Twitter</a>
+                <a href="https://www.messenger.com" target="_blank">messenger</a>
+                <a href="https://www.instagram.com" target="_blank">instagram</a>
+                <a href="https://whatsapp.com/home" target="_blank">whatsapp</a>
             </div>
+
+            <div id="content-aside">
+                <a href="sign-up.html"><button id="btn-aside-sign">Cadastrar</button></a>
+                <a href="login.html"><button id="btn-aside-login">Entrar</button></a>
+            </div>
+        </div>
+    </aside>
+
+    <input type="checkbox" id="toggle-menu-categories" hidden>
+
+    <aside class="sidebar-categories">
+        <div id="container-aside-categories">
+            <a href="categoria-alimentos.html" class="container-item-sidebar-categories">
+                <p class="item-sidebar-categories">Alimentos</p>
+                <i class="bi bi-arrow-right" id="arrow-aside-categories"></i>
+            </a>
+
+            <a href="categoria-bebidas.html" class="container-item-sidebar-categories">
+                <p class="item-sidebar-categories">Bebidas</p>
+                <i class="bi bi-arrow-right" id="arrow-aside-categories"></i>
+            </a>
+
+            <a href="categoria-hortifruti.html" class="container-item-sidebar-categories">
+                <p class="item-sidebar-categories">Hortifruti</p>
+                <i class="bi bi-arrow-right" id="arrow-aside-categories"></i>
+            </a>
+
+            <a href="categoria-higiene.html" class="container-item-sidebar-categories">
+                <p class="item-sidebar-categories">Higêne</p>
+                <i class="bi bi-arrow-right" id="arrow-aside-categories"></i>
+            </a>
+
+            <a href="categoria-limpeza.html" class="container-item-sidebar-categories">
+                <p class="item-sidebar-categories">Limpeza</p>
+                <i class="bi bi-arrow-right" id="arrow-aside-categories"></i>
+            </a>
         </div>
     </aside>
 
@@ -129,19 +185,14 @@
                 <h5>Sobre Nós</h5>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2"><a href="contatos.html" class="nav-link p-0 text-body-secondary">Contato</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Informações da
-                            empresa</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">História</a></li>
-                </ul>
+
+                    <li class="nav-item mb-2"><a href="sobrenos.html" class="nav-link p-0 text-body-secondary">Sobre nós</a></li>
             </div>
 
             <div class="col-6 col-md-2 mb-3">
-                <h5>Contato</h5>
+                <h5>Suporte</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="contatos.html" class="nav-link p-0 text-body-secondary">Telefone</a></li>
-                    <li class="nav-item mb-2"><a href="contantos.html" class="nav-link p-0 text-body-secondary">Chat</a></li>
                     <li class="nav-item mb-2"><a href="ajuda.html" class="nav-link p-0 text-body-secondary">Ajuda</a></li>
-
                 </ul>
             </div>
 

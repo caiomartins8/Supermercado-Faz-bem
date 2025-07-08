@@ -1015,13 +1015,13 @@ figcaption {
     transition: 0.7s ease-in-out;
     margin-bottom: 12px;
 }
-
+ 
 .btn-warning:hover {
     background-color: #FFA931;
     color: white;
     transform: scale(1.03);
 }
-
+ 
 #bodylogin {
     background-image: url(imagens/biscoito.png);
     background-repeat: no-repeat;
@@ -1032,7 +1032,7 @@ figcaption {
     flex-direction: column;
     height: 100vh;
 }
-
+ 
 #mainlogin {
     display: flex;
     flex-direction: column;
@@ -1040,12 +1040,16 @@ figcaption {
     align-items: center;
     margin: 0 auto;
     margin-bottom: 100px;
-    width: 80%;
+    width: 70%;
     background-color: white;
     padding: 4vw;
     border-radius: 30px;
 }
-
+ 
+#mainlogin figure img {
+    width: 100%;
+}
+ 
 @media (min-width: 768px) {
     #mainlogin {
         display: flex;
@@ -1054,47 +1058,52 @@ figcaption {
         align-items: center;
         margin: 0 auto;
         margin-bottom: 100px;
-        width: 40%;
+        width: 30%;
         background-color: white;
         padding: 2vw;
         border-radius: 30px;
     }
+ 
+    #mainlogin figure img {
+        width: 90%;
+        height: auto;
+    }
 }
-
+ 
 .form-floating {
     width: 100% !important;
 }
-
+ 
 #mainlogin p {
     font-size: 0.7rem;
     color: gray;
 }
-
+ 
 @media (min-width: 768px) {
     #mainlogin p {
         font-size: 0.8rem;
         color: gray;
     }
 }
-
+ 
 #mainlogin a {
     color: #393939;
     font-weight: 600;
     text-decoration: none;
 }
-
+ 
 #headerlogin {
     width: 100%;
     text-align: start;
 }
-
+ 
 #h1login {
     font-size: 4rem;
     font-weight: 500;
     color: white;
     margin: 2rem auto;
 }
-
+ 
 #logologin {
     width: 12.5rem;
     height: 3.125rem;
@@ -1109,14 +1118,17 @@ figcaption {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
+ 
 #logologin {
     width: 12.5rem;
     height: 3.125rem;
     object-fit: contain;
 }
-
+ 
 #bodycriarconta form {
     display: flex;
     flex-direction: column;
@@ -1127,19 +1139,34 @@ figcaption {
     padding: 3vw;
     border-radius: 30px;
 }
-
+ 
+#bodycriarconta form p {
+    font-size: 0.7rem;
+}
+ 
+ 
+    #bodycriarconta form figure img {
+width: 100%;
+    }
+ 
 @media (min-width: 768px) {
     #bodycriarconta form {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 40%;
+        width: 50%;
         background-color: white;
         border-radius: 30px;
+            padding: 1vw;
+ 
+    }
+ 
+    #bodycriarconta form figure img {
+width: 50%;
     }
 }
-
+ 
 #maincriarconta {
     display: flex;
     flex-direction: column;
@@ -1148,7 +1175,7 @@ figcaption {
     gap: 10px;
     padding-bottom: 6.5rem;
 }
-
+ 
 @media (min-width: 768px) {
     #maincriarconta {
         display: flex;
@@ -1159,43 +1186,46 @@ figcaption {
         padding-bottom: 0;
     }
 }
-
-
+ 
+ 
 #maincriarconta article h1 {
     font-size: 4rem;
     font-weight: 700;
     color: white;
 }
-
+ 
 #maincriarconta article p {
     display: none;
 }
-
+ 
 @media (min-width: 768px) {
     #maincriarconta article p {
         display: block;
-        font-size: 2rem;
+        font-size: 2.4rem;
         color: white;
     }
 }
-
+ 
+#maincriarconta form a {
+    color:black !important;
+}
+ 
 #inferior-content-sign-up {
     display: flex;
-    gap: 8px;
 }
-
+ 
 #inferior-content-sign-up p {
     font-size: 1rem;
     color: #737373;
 }
-
+ 
 #inferior-content-sign-up a {
     font-size: 1rem;
     font-weight: 600;
     color: #393939;
     text-decoration: none;
 }
-
+ 
 #inputnomecompleto {
     display: block;
     width: 50%;
@@ -1203,12 +1233,12 @@ figcaption {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-
+ 
     border: var(--bs-border-width) solid var(--bs-border-color);
     border-radius: var(--bs-border-radius);
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
-
+ 
 #inputaniversario {
     display: block;
     width: 50%;
@@ -1216,7 +1246,7 @@ figcaption {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-
+ 
     border: var(--bs-border-width) solid var(--bs-border-color);
     border-radius: var(--bs-border-radius);
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
