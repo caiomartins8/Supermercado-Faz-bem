@@ -1990,7 +1990,11 @@ textarea {
     border: none;
     padding: 0.8vw;
     font-size: 0.8rem;
+    transition: .3s ease;
+}
 
+#btn-e-cupom button:hover {
+    background-color: #327924;
 }
 
 .favoritar {
@@ -2010,12 +2014,6 @@ textarea {
     fill: #6BBA5C;
     stroke: #6BBA5C;
 }
-
-.favoritado .heart-icon {
-    fill: #6BBA5C;
-    stroke: #437c37;
-}
-
 
 .card-title {
     font-size: 2rem;
@@ -2053,6 +2051,8 @@ textarea {
     font-weight: 800;
     text-align: center;
 }
+
+
 
 @media (min-width: 768px) {
     #mainalimentos h1 {
