@@ -425,6 +425,7 @@ figcaption {
 
 .img-banner {
     width: 100%;
+    height: 17vh;
     object-fit: cover;
 }
 
