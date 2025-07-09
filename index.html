@@ -15,6 +15,11 @@
 <body id="body-index">
     <header id="header-market">
         <nav id="nav-market">
+
+            <label for="toggle-menu">
+                <i class="bi bi-list"></i>
+            </label>
+
             <figure>
                 <a href="index.html">
                     <img src="./imagens/logo.png" alt="Logo Super Mercado Faz-bem" id="logo-market">
@@ -22,7 +27,7 @@
                 <figcaption>Logo Super Mercado Faz-bem</figcaption>
             </figure>
 
-            <div id="container-search-market">
+            <div id="container-search-market-desktop">
                 <i class="bi bi-search"></i>
                 <input type="text" placeholder="Buscar..." id="search-market">
             </div>
@@ -46,14 +51,15 @@
                     <i class="bi bi-bag-fill"></i>
                 </label>
                 <div id="bag-market">
-                    <p id="bag-market-txt"> R$ 0,0 <br> 0 itens</p>
+                    <p id="bag-market-txt"> R$ 0,00 <br> 0 itens</p>
                 </div>
             </div>
-
-            <label for="toggle-menu">
-                <i class="bi bi-list"></i>
-            </label>
         </nav>
+
+        <div id="container-search-market-mobile">
+            <i class="bi bi-search"></i>
+            <input type="text" placeholder="Buscar..." id="search-market">
+        </div>
     </header>
 
     <!-- C sacola -->
@@ -96,13 +102,6 @@
                 <label for="toggle-menu">
                     <i class="bi bi-x-lg"></i>
                 </label>
-            </div>
-
-            <div id="social-media-aside">
-                <a href="https://www.facebook.com" target="_blank">facebook</a>
-                <a href="https://www.messenger.com" target="_blank">messenger</a>
-                <a href="https://www.instagram.com" target="_blank">instagram</a>
-                <a href="https://whatsapp.com" target="_blank">whatsapp</a>
             </div>
 
             <div id="content-aside">
@@ -195,7 +194,7 @@
                                 pratos mais coloridos.</p>
 
                             <a href="categoria-hortifruti.html">
-                                <button class="btn-revealing">me leve até a categoria</button>
+                                <button class="btn-revealing">categoria hortifruti</button>
                             </a>
                         </div>
                     </div>
@@ -212,7 +211,7 @@
                                 precisa para elevar o seu dia!</p>
 
                             <a href="categoria-bebidas.html">
-                                <button class="btn-revealing">me leve até a categoria</button>
+                                <button class="btn-revealing">categoria bebidas</button>
                             </a>
                         </div>
                     </div>
@@ -229,7 +228,7 @@
                                 vigorante</p>
 
                             <a href="categoria-alimentos.html">
-                                <button class="btn-revealing">me leve até a categoria</button>
+                                <button class="btn-revealing">categoria alimentos</button>
                             </a>
                         </div>
                     </div>
@@ -250,7 +249,7 @@
                                     pratos mais coloridos.</p>
 
                                 <a href="categoria-hortifruti.html">
-                                    <button class="btn-revealing">me leve até a categoria</button>
+                                    <button class="btn-revealing">categoria hortifruti</button>
                                 </a>
                             </div>
                         </div>
@@ -269,7 +268,7 @@
                                     precisa para elevar o seu dia!</p>
 
                                 <a href="categoria-bebidas.html">
-                                    <button class="btn-revealing">me leve até a categoria</button>
+                                    <button class="btn-revealing">categoria bebidas</button>
                                 </a>
                             </div>
                         </div>
@@ -288,7 +287,7 @@
                                     vigorante.</p>
 
                                 <a href="categoria-alimentos.html">
-                                    <button class="btn-revealing">me leve até a categoria</button>
+                                    <button class="btn-revealing">categoria alimentos</button>
                                 </a>
                             </div>
                         </div>
@@ -322,23 +321,23 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <figure>
-                            <img src="./imagens/Banner-sfb.png" class="d-block w-100 img-banner"
-                                alt="fundadores do Supermercado Faz-bem">
-                            <figcaption>fundadores do Supermercado Faz-bem</figcaption>
+                            <img src="./imagens/Nestle.jpg" class="d-block w-100 img-banner"
+                                alt="produtos da Nestle">
+                            <figcaption>Produtos da Nestle</figcaption>
                         </figure>
                     </div>
 
                     <div class="carousel-item">
                         <figure>
-                            <img src="./imagens/banner-bebidas.jpg" class="d-block w-100 img-banner"
-                                alt="banner do vinho Mathe">
-                            <figcaption>banner do Vinho Mathe</figcaption>
+                            <img src="./" class="d-block w-100 img-banner"
+                                alt="banner de vinho tinto">
+                            <figcaption>banner de vinho tinto</figcaption>
                         </figure>
                     </div>
 
                     <div class="carousel-item">
                         <figure>
-                            <img src="./imagens/banner-hortifruti.jpeg" class="d-block w-100 img-banner"
+                            <img src="./imagens/Seara-gourmet.jpg" class="d-block w-100 img-banner"
                                 alt="banner hortifruti">
                             <figcaption>banner hortifruti</figcaption>
                         </figure>
@@ -359,9 +358,6 @@
             </div>
 
         </section>
-        <p id="pinauguracao">
-            Supermercados Faz-Bem inaugura nova loja em Governador <br> Valadares no formato atacado e varejo.
-        </p>
     </main>
 
     <footer class="py-5">
@@ -412,10 +408,6 @@
             <div id="content-footer">
                 <figure>
                     <img src="imagens/logo.png" alt="" id="logo-footer">
-                </figure>
-
-                <figure>
-                    <img src="imagens/forma-de-pagamento.png" alt="" id="cartoesfooter">
                 </figure>
 
                 <nav>
