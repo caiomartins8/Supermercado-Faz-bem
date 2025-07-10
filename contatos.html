@@ -49,7 +49,7 @@
                     <i class="bi bi-bag-fill"></i>
                 </label>
                 <div id="bag-market">
-                    <p id="bag-market-txt"> R$ 0,0 <br> 0 itens</p>
+                    <p id="bag-market-txt"> R$ 0,00 <br> 0 itens</p>
                 </div>
             </div>
 
@@ -101,14 +101,13 @@
                 </label>
             </div>
 
-            <div id="social-media-aside">
-                <a href="https://www.facebook.com" target="_blank">facebook</a>
-                <a href="https://www.messenger.com" target="_blank">messenger</a>
-                <a href="https://www.instagram.com" target="_blank">instagram</a>
-                <a href="https://whatsapp.com" target="_blank">whatsapp</a>
-            </div>
-
-            <div id="content-aside">
+            <div id="container-aside-menu">
+                <div id="content-aside-us">
+                    <a href="sobrenos.html">Sobre nós</a>
+                    <a href="contatos.html">Contatos</a>
+                    <a href="ajuda.html">Ajuda</a>
+                    <a href="termos.html">Termos</a>
+                </div>
                 <a href="sign-up.html"><button id="btn-aside-sign">Cadastrar</button></a>
                 <a href="login.html"><button id="btn-aside-login">Entrar</button></a>
             </div>
@@ -167,29 +166,19 @@
                 <form action="submit">
                     <h2 class="text-center">CONTATE-NOS</h2>
                     <br>
-
-                    <div class="form-floating mb-3 position-relative">
-                        <input type="text" class="form-control pe-5" id="nomeInput" placeholder="Seu nome">
-                        <label for="nomeInput">Nome:</label>
-                        <span class="position-absolute top-50 end-0 translate-middle-y me-3 text-muted">
-                            <i class="fa fa-user"></i>
-                        </span>
-                    </div>
-
-                    <div class="form-floating mb-3 position-relative">
-                        <input type="email" class="form-control pe-5" id="emailInput" placeholder="seu@email.com">
-                        <label for="emailInput">Email:</label>
-                        <span class="position-absolute top-50 end-0 translate-middle-y me-3 text-muted">
-                            <i class="fa fa-envelope"></i>
-                        </span>
-                    </div>
-
-                    <div class="mb-3">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                            placeholder="Mensagem:"></textarea>
-                    </div>
-
-                    <button> enviar mensagem</button>
+<div class="mb-3">
+        <input type="text" class="form-control" id="usuario" placeholder="Usuário">
+      </div>
+      <div class="mb-3">
+        <input type="email" class="form-control" id="email" placeholder="Email">
+      </div>
+      <div class="mb-3">
+        <input type="text" class="form-control" id="usuario" placeholder="Mensagem ...">
+      </div>
+      
+<br>
+<br>
+                    <button> Enviar </button>
                 </form>
             </div>
         </div>

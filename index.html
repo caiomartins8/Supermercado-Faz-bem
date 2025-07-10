@@ -15,11 +15,6 @@
 <body id="body-index">
     <header id="header-market">
         <nav id="nav-market">
-
-            <label for="toggle-menu">
-                <i class="bi bi-list"></i>
-            </label>
-
             <figure>
                 <a href="index.html">
                     <img src="./imagens/logo.png" alt="Logo Super Mercado Faz-bem" id="logo-market">
@@ -27,7 +22,7 @@
                 <figcaption>Logo Super Mercado Faz-bem</figcaption>
             </figure>
 
-            <div id="container-search-market-desktop">
+            <div id="container-search-market">
                 <i class="bi bi-search"></i>
                 <input type="text" placeholder="Buscar..." id="search-market">
             </div>
@@ -54,12 +49,11 @@
                     <p id="bag-market-txt"> R$ 0,00 <br> 0 itens</p>
                 </div>
             </div>
-        </nav>
 
-        <div id="container-search-market-mobile">
-            <i class="bi bi-search"></i>
-            <input type="text" placeholder="Buscar..." id="search-market">
-        </div>
+            <label for="toggle-menu">
+                <i class="bi bi-list"></i>
+            </label>
+        </nav>
     </header>
 
     <!-- C sacola -->
@@ -104,7 +98,13 @@
                 </label>
             </div>
 
-            <div id="content-aside">
+            <div id="container-aside-menu">
+                <div id="content-aside-us">
+                    <a href="sobrenos.html">Sobre nós</a>
+                    <a href="contatos.html">Contatos</a>
+                    <a href="ajuda.html">Ajuda</a>
+                    <a href="termos.html">Termos</a>
+                </div>
                 <a href="sign-up.html"><button id="btn-aside-sign">Cadastrar</button></a>
                 <a href="login.html"><button id="btn-aside-login">Entrar</button></a>
             </div>
@@ -131,7 +131,7 @@
             </a>
 
             <a href="categoria-higiene.html" class="container-item-sidebar-categories">
-                <p class="item-sidebar-categories">Higêne</p>
+                <p class="item-sidebar-categories">Higiene</p>
                 <i class="bi bi-arrow-right" id="arrow-aside-categories"></i>
             </a>
 
@@ -151,7 +151,6 @@
                     </label>
                     <li class="li-item-market-barrer"> | </li>
                     <li><a href="#carousel-banner" class="li-item-market">novidades</a></li>
-                    <li><a href="#" class="li-item-market">folhetos</a></li>
                     <li><a href="#maisvendidos" class="li-item-market">mais vendidos</a></li>
                 </ul>
             </nav>
@@ -321,40 +320,48 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <figure>
-                            <img src="./imagens/Nestle.jpg" class="d-block w-100 img-banner"
-                                alt="produtos da Nestle">
+                            <a href="categoria-alimentos.html">
+                                <img src="./imagens/Nestle.jpg" class="d-block w-100 img-banner"
+                                    alt="produtos da Nestle">
+                            </a>
                             <figcaption>Produtos da Nestle</figcaption>
                         </figure>
                     </div>
 
                     <div class="carousel-item">
                         <figure>
-                            <img src="./" class="d-block w-100 img-banner"
+                            <a href="categoria-bebidas.html">
+                                <img src="./imagens/Banner-Vinho.jpg" class="d-block w-100 img-banner"
                                 alt="banner de vinho tinto">
+                            </a>
                             <figcaption>banner de vinho tinto</figcaption>
                         </figure>
                     </div>
 
                     <div class="carousel-item">
                         <figure>
-                            <img src="./imagens/Seara-gourmet.jpg" class="d-block w-100 img-banner"
+                            <a href="categoria-alimentos.html">
+                                <img src="./imagens/Seara-gourmet.jpg" class="d-block w-100 img-banner"
                                 alt="banner hortifruti">
+                            </a>
                             <figcaption>banner hortifruti</figcaption>
                         </figure>
                     </div>
                 </div>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
+                <div id="container-btns-banner">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
 
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
 
         </section>
