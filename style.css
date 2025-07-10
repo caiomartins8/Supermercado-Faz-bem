@@ -1336,7 +1336,7 @@ figcaption {
     background-color: #6BBA5C;
     margin-top: 20vh;
     color: white;
-        font-size: 0.8rem;
+    font-size: 0.8rem;
 
     width: 100%;
     margin-left: 0;
@@ -2000,7 +2000,7 @@ footer a {
 
 }
 
-.form-control{
+.form-control {
     font-size: 0.8rem !important;
 }
 
@@ -2012,7 +2012,7 @@ footer a {
 #maincontatos form h2 {
     color: #FFA931;
     font-weight: 700;
-    font-size:2rem;
+    font-size: 2rem;
     text-align: center;
     padding: 1rem;
     border-radius: 12px 12px 0 0;
@@ -2052,11 +2052,12 @@ textarea {
     padding: 0.3vw;
     background-color: white;
     transition: 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 #cupom:hover {
-background-color: #fde4c1;
-transform: scale(1.1);
+    background-color: #fde4c1;
+    transform: scale(1.1);
 }
 
 #pfretegratis {
@@ -2087,7 +2088,6 @@ transform: scale(1.1);
 
 .favoritar {
     cursor: pointer;
-    margin-top: 10px;
     text-align: right;
     padding-right: 30px;
 }
@@ -2103,12 +2103,8 @@ transform: scale(1.1);
     stroke: #6BBA5C;
 }
 
-.card-title {
-    margin-top: 30px ;
-}
-
-@media(max-width:768px){
-    .card-title{
+@media(max-width:768px) {
+    .card-title {
         font-size: 1rem;
     }
 }
@@ -2122,7 +2118,8 @@ transform: scale(1.1);
     align-items: start;
     justify-content: start;
     flex-direction: column;
-
+    margin-left: 3rem;
+    gap: 10px;
 }
 
 .card {
@@ -2131,56 +2128,54 @@ transform: scale(1.1);
     display: flex;
     flex-direction: row;
     gap: 20px;
-
-}
-
-.img-fluid {
-    height: 100% !important;
-    width: 12vw;
-    object-fit: cover;
 }
 
 #mainalimentos h1 {
     font-size: 2rem;
     font-weight: 800;
     text-align: center;
+    padding-top: 1rem;
 }
-
-
 
 @media (min-width: 768px) {
     #mainalimentos h1 {
         font-size: 3rem;
         font-weight: 800;
         text-align: center;
+        padding-top: 1rem;
     }
 }
 
-#mainalimentos nav ul #li-preto {
+#container-txt-categories #li-preto {
     list-style-type: none;
     border: 2px solid black;
     border-radius: 50px;
     font-size: .675rem;
     font-weight: 600;
-    width: 18%;
+    width: 15%;
     gap: 20px;
     text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
 }
 
 @media (min-width: 768px) {
-    #mainalimentos nav ul #li-preto {
+    #container-txt-categories #li-preto {
         list-style-type: none;
         border: 3px solid black;
         border-radius: 50px;
         font-size: 1.5rem;
         font-weight: 600;
-        width: 18%;
-        gap: 10px;
-        text-align: center;
+        width: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
-#mainalimentos nav ul #li-preto a {
+#container-txt-categories #li-preto a {
     text-decoration: none;
     color: inherit;
     display: block;
@@ -2196,8 +2191,7 @@ transform: scale(1.1);
     border-radius: 50px;
     font-size: .675rem;
     font-weight: 600;
-    width: 18%;
-    gap: 10px;
+    width: 20%;
     text-align: center;
 }
 
@@ -2210,7 +2204,7 @@ transform: scale(1.1);
         border-radius: 50px;
         font-size: 1.5rem;
         font-weight: 600;
-        width: 18%;
+        width: 20%;
         gap: 10px;
         text-align: center;
     }
@@ -2225,16 +2219,36 @@ transform: scale(1.1);
     border-radius: 50px;
 }
 
-#mainalimentos nav ul {
-   display: flex;
+#container-txt-categories {
+    display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 2px;
+    gap: 10px;
+    width: 100%;
+    padding: .5rem;
+}
+
+@media(min-width: 768px) {
+    #container-txt-categories {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        padding: 1rem;
+    }
 }
 
 .w-50 {
     width: 60% !important;
 }
+
+.card-img-top {
+    width: 15rem;
+    height: 100%;
+    object-fit: cover;
+} 
 
 .cards-desktop {
     display: block;
@@ -2255,13 +2269,6 @@ transform: scale(1.1);
     }
 }
 
-
 .cards-mobile-carousel {
     display: block;
-}
-
-.container-categorias {
-  max-width: 90%; 
-  margin: 0 auto;
-  padding: 0 20px;
 }
