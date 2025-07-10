@@ -2121,6 +2121,8 @@ textarea {
         justify-content: start;
         flex-direction: column;
         margin-left: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
         gap: 10px;
     }
 }
