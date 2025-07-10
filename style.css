@@ -2122,7 +2122,7 @@ textarea {
         flex-direction: column;
         margin-left: 3rem;
         margin-top: 1rem;
-        margin-bottom: 1rem;
+        margin-bottom: .5rem;
         gap: 10px;
     }
 }
@@ -2251,7 +2251,7 @@ textarea {
 
 .card-img-top {
     width: 15rem;
-    height: 100%;
+    height: 15rem;
     object-fit: cover;
 }
 
