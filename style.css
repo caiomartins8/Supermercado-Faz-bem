@@ -649,7 +649,7 @@ figcaption {
 }
 
 #section-promo {
-    background-image: url(./imagens/vista-superior-de-deliciosas-frutas-com-espaco-de-copia\ \(1\).jpg);
+    background-image: url(./imagens/Arraiá\ Faz-Bem.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -666,14 +666,13 @@ figcaption {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #F8F8F8;
     z-index: -1;
     opacity: 40%;
 }
 
 @media (min-width: 768px) {
     #section-promo {
-        background-image: url(./imagens/vista-superior-de-deliciosas-frutas-com-espaco-de-copia\ \(1\).jpg);
+        background-image: url(./imagens/Arraiá\ Faz-Bem.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -689,7 +688,6 @@ figcaption {
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: #F8F8F8;
         z-index: -1;
         opacity: 20%;
     }
